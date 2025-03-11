@@ -21,7 +21,7 @@ print("Training Data Columns:")
 print(train_df.columns)
 
 # 2. Convert the sentiment column values to plain integers.
-# For "other_column1", we assume the sentiment is the third token when splitting by whitespace.
+# For "absa1", we assume the sentiment is the third token when splitting by whitespace.
 def convert_label(x):
     if isinstance(x, str):
         tokens = x.split()
@@ -48,14 +48,14 @@ def convert_label(x):
         return int(x)
 
 # Apply the conversion to the sentiment column
-train_df["other_column1"] = train_df["other_column1"].apply(convert_label)
-dev_df["other_column1"]   = dev_df["other_column1"].apply(convert_label)
-test_df["other_column1"]  = test_df["other_column1"].apply(convert_label)
+train_df["absa1"] = train_df["absa1"].apply(convert_label)
+dev_df["absa1"]   = dev_df["absa1"].apply(convert_label)
+test_df["absa1"]  = test_df["absa1"].apply(convert_label)
 
 # 3. Rename the sentiment column to "labels"
-train_df = train_df.rename(columns={"other_column1": "labels"})
-dev_df   = dev_df.rename(columns={"other_column1": "labels"})
-test_df  = test_df.rename(columns={"other_column1": "labels"})
+train_df = train_df.rename(columns={"absa1": "labels"})
+dev_df   = dev_df.rename(columns={"absa1": "labels"})
+test_df  = test_df.rename(columns={"absa1": "labels"})
 
 # 4. Create Hugging Face Datasets from the dataframes
 train_dataset = Dataset.from_pandas(train_df)
@@ -65,9 +65,9 @@ test_dataset  = Dataset.from_pandas(test_df)
 # 5. Initialize the tokenizer
 tokenizer = DistilBertTokenizerFast.from_pretrained("distilbert-base-uncased")
 
-# 6. Define the tokenization function using the text column
+# 6. Define the tokenization function using the tokens column
 def tokenize_function(example):
-    return tokenizer(example["text_column"], padding="max_length", truncation=True, max_length=128)
+    return tokenizer(example["tokens"], padding="max_length", truncation=True, max_length=128)
 
 # 7. Tokenize all datasets
 train_dataset = train_dataset.map(tokenize_function, batched=True)
