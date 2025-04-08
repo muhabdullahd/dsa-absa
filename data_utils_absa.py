@@ -5,6 +5,8 @@ import os
 import spacy
 from textblob import TextBlob
 from nltk.tokenize import word_tokenize
+import ast
+
 
 # Load spaCy model
 nlp = spacy.load("en_core_web_sm")
@@ -57,3 +59,29 @@ df_test[['tokens', 'absa1', 'absa2', 'absa3']].to_csv(os.path.join(dataset_folde
 
 # Print confirmation
 print("Preprocessing complete. Cleaned train, validation, dev, and test sets saved.")
+
+def convert_label(x):
+    if isinstance(x, str):
+        tokens = x.split()
+        if len(tokens) >= 3:
+            return int(tokens[2])
+        else:
+            return int(x)
+    elif isinstance(x, list):
+        return int(x[2]) if len(x) >= 3 else int(x[0])
+    return int(x)
+
+
+def preprocess_for_absa(train_df, dev_df, test_df):
+    for df in [train_df, dev_df, test_df]:
+        df["labels"] = df["absa1"].apply(convert_label)
+        df["aspect"] = df["absa2"].astype(str)
+        df["text"] = df.apply(
+            lambda row: f"{' '.join(ast.literal_eval(row['tokens']))} [SEP] {row['aspect']}"
+            if isinstance(row['tokens'], str)
+            else f"{' '.join(row['tokens'])} [SEP] {row['aspect']}",
+            axis=1
+        )
+        df.drop(columns=["absa1", "absa2", "absa3"], errors="ignore", inplace=True)
+    return train_df, dev_df, test_df
+
