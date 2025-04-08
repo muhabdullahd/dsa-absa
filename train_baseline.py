@@ -1,7 +1,6 @@
 import pandas as pd
-from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
-from sklearn.metrics import accuracy_score
+from sklearn.metrics import accuracy_score, f1_score, classification_report
 from data_utils_baseline import load_data
 
 # Load preprocessed data
@@ -20,4 +19,9 @@ y_pred = model.predict(X_test)
 
 # Evaluate the model
 accuracy = accuracy_score(y_test, y_pred)
+f1 = f1_score(y_test, y_pred, average="macro")
 print(f'Accuracy: {accuracy:.4f}')
+print(f'F1 Score: {f1:.4f}')
+
+# Print classification report
+print(classification_report(y_test, y_pred))
