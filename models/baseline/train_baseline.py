@@ -1,7 +1,9 @@
 import pandas as pd
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import accuracy_score, f1_score, classification_report
-from data_utils_baseline import load_data
+import sys
+sys.path.append('../..')  # Add parent directory to path
+from utils.data_utils_baseline import load_data
 
 # Load preprocessed data
 train_data, test_data = load_data()

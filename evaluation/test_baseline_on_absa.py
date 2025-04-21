@@ -2,7 +2,9 @@ import pandas as pd
 import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics import accuracy_score, f1_score, classification_report
-from data_utils_baseline import load_data
+import sys
+sys.path.append('..')  # Add parent directory to path
+from utils.data_utils_baseline import load_data
 
 def load_absa_test_dataset(file_path):
     """Load and preprocess ABSA test dataset"""

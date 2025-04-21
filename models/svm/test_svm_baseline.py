@@ -1,7 +1,9 @@
 import unittest
 from sklearn.metrics import accuracy_score, f1_score
 from sklearn.svm import SVC
-from data_utils_baseline import load_data
+import sys
+sys.path.append('../..')  # Add parent directory to path
+from utils.data_utils_baseline import load_data
 
 class TestSVMBaseline(unittest.TestCase):
     @classmethod
