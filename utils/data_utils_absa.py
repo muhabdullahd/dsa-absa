@@ -12,7 +12,7 @@ import ast
 nlp = spacy.load("en_core_web_sm")
 
 # Define file paths (ensure Dataset folder exists)
-dataset_folder = "Dataset"
+dataset_folder = os.path.join(os.path.dirname(__file__), "..", "Dataset")
 train_path = os.path.join(dataset_folder, "rest16_quad_train.tsv")
 dev_path = os.path.join(dataset_folder, "rest16_quad_dev.tsv")
 test_path = os.path.join(dataset_folder, "rest16_quad_test.tsv")

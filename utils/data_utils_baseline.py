@@ -4,7 +4,7 @@ import os
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import CountVectorizer
 
-dataset_folder = "Dataset"
+dataset_folder = os.path.join(os.path.dirname(__file__), "..", "Dataset")
 data_path = os.path.join(dataset_folder, "Restaurant_Reviews.tsv")
 
 # Read the TSV file into a DataFrame
