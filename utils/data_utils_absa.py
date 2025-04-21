@@ -76,12 +76,14 @@ def preprocess_for_absa(train_df, dev_df, test_df):
     for df in [train_df, dev_df, test_df]:
         df["labels"] = df["absa1"].apply(convert_label)
         df["aspect"] = df["absa2"].astype(str)
+        df["sentiment"] = df["absa3"].astype(str)
         df["text"] = df.apply(
-            lambda row: f"{' '.join(ast.literal_eval(row['tokens']))} [SEP] {row['aspect']}"
+            lambda row: f"{' '.join(ast.literal_eval(row['tokens']))} [SEP] {row['aspect']} [SEP] {row['sentiment']}"
             if isinstance(row['tokens'], str)
-            else f"{' '.join(row['tokens'])} [SEP] {row['aspect']}",
+            else f"{' '.join(row['tokens'])} [SEP] {row['aspect']} [SEP] {row['sentiment']}",
             axis=1
         )
-        df.drop(columns=["absa1", "absa2", "absa3"], errors="ignore", inplace=True)
+        # Keep the original columns for potential further use
+        df.rename(columns={"absa1": "original_label", "absa2": "original_aspect", "absa3": "original_sentiment"}, inplace=True)
     return train_df, dev_df, test_df
 
