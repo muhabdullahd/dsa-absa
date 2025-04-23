@@ -1,0 +1,292 @@
+tokens	absa1	absa2	absa3
+['not', 'a', 'very', 'fancy', 'place', 'but', 'very', 'good', 'chinese', 'style', 'indian', 'food']	4,5 AMBIENCE#GENERAL 1 3,4	8,12 FOOD#QUALITY 2 7,8	
+['my', 'mon', 'originally', 'introduced', 'me', 'to', 'this', 'place', ' ', 'but', 'even', 'she', ' ', 'being', 'indian', ' ', 'feels', 'the', 'food', 'can', 'be', 'somewhat', 'over', 'the', 'top', 'spice', 'and', 'far', 'too', 'oily']	18,19 FOOD#QUALITY 0 25,26	18,19 FOOD#QUALITY 0 29,30	
+['still', 'we', 'keep', 'going', 'back', ' ']	-1,-1 RESTAURANT#GENERAL 2 -1,-1		
+['i', 'was', 'speechless', 'by', 'the', 'horrible', 'food']	6,7 FOOD#QUALITY 0 5,6		
+['i', 'attended', 'a', 'holiday', 'dinner', 'at', 'the', 'restaurant', ' ', 'and', 'the', 'food', 'was', 'majority', 'disappointing']	11,12 FOOD#QUALITY 0 14,15		
+['i', 'was', 'so', 'stunned', ' ', 'and', 'i', 'left', 'the', 'dinner', 'hungry', 'and', 'majority', 'disappointing']	-1,-1 RESTAURANT#GENERAL 0 13,14		
+['this', 'place', 'survives', 'on', 'reputation', 'alone']	1,2 RESTAURANT#MISCELLANEOUS 0 -1,-1		
+['i', 'will', 'never', 'return']	-1,-1 RESTAURANT#GENERAL 0 -1,-1		
+['best', 'in', 'all', 'of', 'ny']	-1,-1 RESTAURANT#GENERAL 2 0,1		
+['this', 'is', 'the', 'most', 'wonderful', 'restaurant', 'in', 'all', 'of', 'new', 'york', 'city', ' ', 'not', 'just', 'brooklyn', '  ']	5,6 RESTAURANT#GENERAL 2 4,5		
+['for', '7', 'years', 'they', 'have', 'put', 'out', 'the', 'most', 'taste', ' ', 'most', 'delicious', 'food', 'and', 'kept', 'it', 'that', 'way', '  ']	13,14 FOOD#QUALITY 2 9,10	13,14 FOOD#QUALITY 2 12,13	
+['never', 'swaying', ' ', 'never', 'a', 'bad', 'meal', ' ', 'never', 'bad', 'service', '  ']	6,7 FOOD#QUALITY 2 3,6	10,11 SERVICE#GENERAL 2 8,10	-1,-1 RESTAURANT#GENERAL 2 -1,-1
+['you', 'should', 'travel', 'from', 'the', 'bone', 'to', 'try', 'it', '  ']	-1,-1 RESTAURANT#GENERAL 2 -1,-1		
+['so', 'delicious', '     ']	-1,-1 FOOD#QUALITY 2 1,2		
+['palsy', ' ', 's', 'penza', ' ', 'true', 'love']	0,4 RESTAURANT#GENERAL 2 5,7		
+['hands', 'down', 'the', 'best', 'penza', 'on', 'the', 'planet']	4,5 FOOD#QUALITY 2 3,4		
+['in', 'about', '12', 'minutes', ' ', 'the', 'thing', 'is', 'gone']	-1,-1 FOOD#QUALITY 2 -1,-1		
+['the', 'hot', 'dogs', 'were', 'juice', 'and', 'tender', 'inside', 'and', 'had', 'plenty', 'of', 'crutch', 'and', 'snap', 'on', 'the', 'outside']	1,3 FOOD#QUALITY 2 4,5	1,3 FOOD#QUALITY 2 6,7	
+['great', 'stopping', 'definitely', 'a', 'place', 'you', 'need', 'to', 'check', 'out', 'for', 'late', 'night', 'munching', 'or', 'a', 'mid', 'day', 'boost']	1,2 FOOD#QUALITY 2 0,1	4,5 RESTAURANT#MISCELLANEOUS 2 -1,-1	
+['great', 'taste']	-1,-1 FOOD#QUALITY 2 0,1		
+['great', ' ', 'original', 'taste']	-1,-1 FOOD#QUALITY 2 0,1	-1,-1 FOOD#QUALITY 2 2,3	
+['for', 'me', 'dishes', 'a', 'little', 'oily', ' ', 'but', 'overall', 'dining', 'experience', 'good']	2,3 FOOD#QUALITY 0 5,6	-1,-1 RESTAURANT#GENERAL 2 11,12	
+['helpful', 'service', 'and', 'average', 'price', 'per', 'dish', ' ', '10']	1,2 SERVICE#GENERAL 2 0,1	6,7 FOOD#PRICES 1 3,4	
+['great', 'food']	1,2 FOOD#QUALITY 2 0,1		
+['this', 'place', 'has', 'great', 'indian', 'chinese', 'food']	4,7 FOOD#QUALITY 2 3,4		
+['the', 'favors', 'are', 'amazing', 'and', 'the', 'value', 'is', 'phenomena']	-1,-1 FOOD#QUALITY 2 3,4	-1,-1 FOOD#PRICES 2 8,9	
+['be', 'prepared', 'to', 'wait', ' ', 'because', 'the', 'place', 'is', 'pretty', 'tiny']	7,8 RESTAURANT#MISCELLANEOUS 0 10,11	7,8 AMBIENCE#GENERAL 0 10,11	
+['also', ' ', 'they', 'do', 'not', 'take', 'credit', 'card', 'so', 'come', 'with', 'cash']	-1,-1 RESTAURANT#MISCELLANEOUS 1 -1,-1		
+['even', 'though', 'the', 'place', 'is', 'not', 'beautiful', ' ', 'the', 'food', 'speaks', 'for', 'itself']	3,4 AMBIENCE#GENERAL 0 5,7	9,10 FOOD#QUALITY 2 10,13	
+['best', 'indian', 'chinese', 'in', 'the', 'city', ' ', 'by', 'far']	1,3 FOOD#QUALITY 2 0,1		
+['amazing', 'my', 'favorite', '  ']	-1,-1 RESTAURANT#GENERAL 2 2,3	-1,-1 RESTAURANT#GENERAL 2 0,1	
+['i', 'came', 'across', 'village', 'underground', 'by', 'accident', ' ', 'now', 'i', 'go', 'there', 'all', 'the', 'time']	3,5 RESTAURANT#GENERAL 2 -1,-1		
+['the', 'service', 'is', 'amazing', ' ', 'i', ' ', 've', 'had', 'different', 'waters', 'and', 'they', 'were', 'all', 'nice', ' ', 'which', 'is', 'a', 'rare', 'thing', 'in', 'ny']	1,2 SERVICE#GENERAL 2 3,4	10,11 SERVICE#GENERAL 2 15,16	
+['the', 'do', 'is', 'awesome', ' ', 'i', 'have', 'been', 'there', 'for', 'my', 'birthday', 'and', 'a', 'bunch', 'of', 'other', 'times', 'with', 'friends', 'and', 'i', 'keep', 'going', 'back']	1,2 AMBIENCE#GENERAL 2 3,4	-1,-1 RESTAURANT#GENERAL 2 -1,-1	
+['you', 'can', 'get', 'a', 'table', 'without', 'a', 'reservation', 'if', 'you', 'get', 'there', 'early', 'i', 'they', 'do', 'n', ' ', 't', 'make', 'you', 'by', 'bottles']	-1,-1 SERVICE#GENERAL 2 -1,-1		
+['which', 'lets', 'face', 'it', '    ', 'at', 'times', 'it', ' ', 's', 'a', 'good', 'thing']	-1,-1 SERVICE#GENERAL 2 14,15		
+['in', 'the', 'end', 'you', 'end', 'up', 'with', 'a', 'fair', 'tax', 'and', 'nothing', 'but', 'a', 'great', 'time', '  ']	-1,-1 RESTAURANT#PRICES 2 8,9	-1,-1 RESTAURANT#GENERAL 2 14,15	
+['highly', 'recommended']	-1,-1 RESTAURANT#GENERAL 2 1,2		
+['one', 'of', 'the', 'best', ' ', 'if', 'not', 'the', 'best', ' ', 'restaurant', 'in', 'park', 'slope', ' ', 'and', 'ny', 'in', 'general']	-1,-1 RESTAURANT#GENERAL 2 3,4		
+['everything', 'on', 'the', 'menu', 'is', 'great']	3,4 FOOD#QUALITY 2 5,6		
+['this', 'establishment', 'is', 'the', 'real', 'deal']	1,2 RESTAURANT#GENERAL 2 4,6		
+['but', ' ', '500', 'for', 'a', 'dinner', 'for', 'two', 'that', 'did', 'n', ' ', 't', 'include', 'wine']	5,8 FOOD#PRICES 0 -1,-1		
+['look', ' ', 'the', 'appetizers', 'were', 'really', 'good']	3,4 FOOD#QUALITY 2 6,7		
+['the', 'entree', 'was', 'also', 'very', 'good']	1,2 FOOD#QUALITY 2 5,6		
+['ca', 'n', ' ', 't', 'argue', 'about', 'that', ' ', 'but', 'they', 'are', 'clearly', 'over', 'prices']	-1,-1 FOOD#PRICES 0 12,14		
+['what', 'you', 'are', 'paying', 'for', 'is', 'the', 'environment', 'and', 'the', 'name']	7,8 AMBIENCE#GENERAL 1 -1,-1	-1,-1 RESTAURANT#MISCELLANEOUS 1 -1,-1	-1,-1 RESTAURANT#PRICES 0 -1,-1
+['yes', ' ', 'the', 'place', 'is', 'class', 'and', 'beautiful', ' ', 'but', 'they', 'most', 'certainly', 'target', 'the', 'user', 'healthy', 'not', 'the', 'common', 'joe', 'that', 'wants', 'to', 'go', 'all', 'out', 'every', 'once', 'in', 'a', 'while']	3,4 AMBIENCE#GENERAL 0 5,6	3,4 AMBIENCE#GENERAL 0 7,8	
+['which', 'of', 'course', 'is', 'not', 'real', 'robe', 'but', 'way', 'beef']	-1,-1 FOOD#QUALITY 0 -1,-1		
+['surprised', 'that', 'a', 'place', 'of', 'this', 'calibre', 'would', 'advertise', 'it', 'as', 'robe']	-1,-1 RESTAURANT#MISCELLANEOUS 0 -1,-1		
+['madison', 'was', 'good', 'but', 'not', 'amazing']	0,1 FOOD#QUALITY 2 2,3	0,1 FOOD#QUALITY 1 4,6	
+['son', 'was', 'quite', 'excellent', 'however']	0,1 FOOD#QUALITY 2 3,4		
+['dessert', ' ', 'pure', 'disaster']	0,1 FOOD#QUALITY 0 3,4		
+['just', 'not', 'good', 'at', 'all']	-1,-1 FOOD#QUALITY 0 1,3		
+['some', 'pineapple', 'covered', 'in', 'a', 'gaze', 'of', 'some', 'kind', 'and', 'some', 'pear', 'part', 'thing', 'not', 'impressive', 'at', 'all']	-1,-1 FOOD#STYLE_OPTIONS 0 14,16	-1,-1 FOOD#QUALITY 0 14,16	
+['i', 'read', 'reviews', 'that', 'called', 'the', 'restaurant', 'too', 'expensive', 'and', 'i', 'thought', 'to', 'myself', ' ', 'but', 'may', 'be', 'it', 'is', 'worth', 'it']	6,7 RESTAURANT#PRICES 0 8,9	6,7 RESTAURANT#GENERAL 0 8,9	
+['the', 'four', 'seasons', 'has', 'history', 'and', 'it', 'is', 'a', 'sort', 'of', 'landmarks', 'of', 'new', 'york', 'city', 'restaurant', ' ', 'but', 'trust', 'me', ' ', 'they', 'will', 'charge', 'you', 'through', 'the', 'nose', 'just', 'so', 'that', 'you', 'can', 'say', '  ', 'i', ' ', 've', 'been', 'to', 'the', 'four', 'seasons', 'restaurant', '  ']	0,3 RESTAURANT#MISCELLANEOUS 1 -1,-1	0,3 RESTAURANT#PRICES 0 -1,-1	
+['all', 'in', 'all', ' ', 'the', 'food', 'was', 'great', ' ', 'except', 'for', 'the', 'deserts', ' ']	5,6 FOOD#QUALITY 2 7,8	12,13 FOOD#QUALITY 0 9,10	
+['if', 'you', 'are', 'going', 'for', 'the', 'food', ' ', 'it', 'will', 'not', 'be', 'worth', 'it']	6,7 FOOD#QUALITY 0 12,13		
+['you', 'would', 'think', 'they', 'would', 'make', 'up', 'for', 'it', 'with', 'service', ' ', 'sadly', ' ', 'no']	10,11 SERVICE#GENERAL 0 12,13		
+['service', 'was', 'just', 'ok', ' ', 'it', 'is', 'not', 'what', 'you', ' ', 'd', 'expect', 'for', ' ', '500']	0,1 SERVICE#GENERAL 0 3,4	-1,-1 RESTAURANT#PRICES 0 -1,-1	
+['terrible', 'waste', 'of', 'money', '  ', 'scatters']	-1,-1 RESTAURANT#GENERAL 0 6,7	-1,-1 RESTAURANT#PRICES 0 0,1	
+['i', 'agree', 'that', 'dining', 'at', 'case', 'la', 'femme', 'is', 'like', 'no', 'other', 'dining', 'experience']	5,8 RESTAURANT#GENERAL 0 -1,-1		
+['i', 'am', 'actually', 'offended', 'to', 'have', 'spent', 'so', 'much', 'money', 'on', 'such', 'a', 'bad', 'experience']	-1,-1 RESTAURANT#GENERAL 0 13,14	-1,-1 RESTAURANT#PRICES 0 3,4	
+['i', 'literally', 'just', 'got', 'back', 'home', 'after', 'visiting', 'case', 'la', 'femme', 'and', 'was', 'so', 'offended', 'by', 'my', 'visit', 'felt', 'it', 'necessary', 'to', 'try', 'and', 'warn', 'other', 'miners', 'who', 'value', 'their', 'money', 'and', 'time']	8,11 RESTAURANT#GENERAL 0 14,15	8,11 RESTAURANT#PRICES 0 14,15	
+['our', 'visit', 'their', 'to', 'say', 'the', 'least', ' ', 'was', 'an', 'unpleasant', 'and', 'costly', 'experience']	-1,-1 RESTAURANT#GENERAL 0 10,11	-1,-1 RESTAURANT#PRICES 0 12,13	
+['and', 'even', 'more', 'so', 'unpleasant', 'because', 'it', 'was', 'so', 'costly', 'for', 'such', 'an', 'unpleasant', 'experience']	-1,-1 RESTAURANT#GENERAL 0 4,5	-1,-1 RESTAURANT#GENERAL 0 13,14	-1,-1 RESTAURANT#PRICES 0 9,10
+['we', 'did', 'arrive', 'late', 'for', 'our', 'reservation', 'so', 'i', 'can', 'not', 'complain', 'too', 'much', 'about', 'the', 'wait', 'for', 'a', 'table']	16,17 SERVICE#GENERAL 1 -1,-1		
+['although', 'we', 'were', 'told', '10', ' ', '15', 'minutes', 'and', 'it', 'was', 'more', 'like', '45', 'minutes']	-1,-1 SERVICE#GENERAL 0 -1,-1		
+['we', 'were', 'ushered', 'to', 'the', 'bar', 'to', 'wait', 'momentarily', 'and', 'upon', 'arrival', 'were', 'so', 'excited']	-1,-1 RESTAURANT#GENERAL 2 14,15		
+['the', 'place', 'is', 'beautiful']	1,2 AMBIENCE#GENERAL 2 3,4		
+['the', 'hostess', 'was', 'very', 'pleasant']	1,2 SERVICE#GENERAL 2 4,5		
+['our', 'experience', 'did', 'not', 'ever', 'get', 'any', 'better']	-1,-1 RESTAURANT#GENERAL 0 -1,-1		
+['for', 'each', 'course', 'we', 'waited', 'over', '1', ' ', '2', 'hour', 'to', '45', 'minutes', 'and', 'were', 'never', 'offered', 'a', 'drink']	-1,-1 SERVICE#GENERAL 0 -1,-1		
+['we', 'also', 'asked', 'for', 'hook', 'six', 'times', 'and', 'the', 'waiter', 'kept', 'telling', 'us', 'one', 'minute', 'and', 'never', 'returning', 'with', 'the', 'hook']	9,10 SERVICE#GENERAL 0 -1,-1		
+['after', 'the', 'th', 'time', 'i', 'asked', 'again', 'and', 'the', 'waiter', 'than', 'said', 'after', 'our', 'dinner']	9,10 SERVICE#GENERAL 0 -1,-1		
+['we', 'asked', 'for', 'beverages', 'and', 'never', 'received', 'them']	-1,-1 SERVICE#GENERAL 0 -1,-1		
+['we', 'asked', 'for', 'sides', 'which', 'the', 'waiter', 'than', 'admitted', 'that', 'he', 'forgot', 'to', 'put', 'in', 'that', 'part', 'of', 'our', 'order']	6,7 SERVICE#GENERAL 0 11,12		
+['my', 'chicken', 'was', 'incredible', 'as', 'there', 'were', 'so', 'many', 'fatty', 'lumps', 'which', 'i', 'had', 'to', 'keep', 'spitting', 'out', 'into', 'my', 'napkin']	1,2 FOOD#QUALITY 0 3,4		
+['i', 'would', 'not', 'expect', 'this', 'for', 'a', ' ', '55', 'dinner']	9,10 FOOD#QUALITY 0 -1,-1	9,10 FOOD#PRICES 0 -1,-1	
+['by', 'the', 'time', 'we', 'finished', 'our', 'dinner', 'we', 'still', 'had', 'not', 'received', 'one', 'beverage', 'nor', 'hook']	-1,-1 SERVICE#GENERAL 0 -1,-1		
+['what', 'we', 'did', 'do', 'was', 'waste', '3', 'hours', 'being', 'wrapped', 'in', 'a', 'table', 'waiting', 'and', 'waiting', 'for', 'food', 'and', 'drinks', 'and', 'hook', '  ', 'some', 'of', 'which', 'we', 'never', 'received']	-1,-1 SERVICE#GENERAL 0 -1,-1		
+['the', 'only', 'beverage', 'we', 'did', 'receive', 'was', 'water', 'in', 'dirty', 'glasses']	-1,-1 SERVICE#GENERAL 0 9,10		
+['to', 'top', 'it', 'all', 'off', '  ', 'the', 'main', 'reason', 'we', 'came', 'to', 'your', 'restaurant', 'was', 'for', 'the', 'belly', 'dancers', 'and', 'missed', 'the', 'first', 'show', 'as', 'we', 'were', 'not', 'seated', 'yet', 'and', 'the', 'and', 'belly', 'dancer', 'only', 'danced', 'at', 'two', 'tables', 'in', 'the', 'back', 'of', 'the', 'restaurant', 'and', 'never', 'made', 'it', 'around', 'to', 'the', 'other', 'half', 'of', 'the', 'restaurant']	-1,-1 SERVICE#GENERAL 0 -1,-1	-1,-1 RESTAURANT#MISCELLANEOUS 0 -1,-1	
+['by', 'the', 'time', 'we', 'left', 'our', 'wallet', 'were', 'empty', 'and', 'so', 'were', 'our', 'stomach', 'and', 'we', 'missed', 'the', 'show', 'we', 'were', 'supposed', 'to', 'see', 'following', 'our', 'dinner', ' ', 'which', 'would', 'have', 'been', 'acceptable', 'if', 'we', 'got', 'to', 'enjoy', 'the', 'experience', 'of', 'good', 'food', 'and', 'belly', 'dancers']	-1,-1 RESTAURANT#PRICES 0 -1,-1	-1,-1 RESTAURANT#MISCELLANEOUS 0 -1,-1	
+['if', 'it', 'seemed', 'possible', 'to', 'do', 'so', 'while', 'there', 'i', 'would', 'have', 'fought', 'my', 'bill', 'since', 'my', 'dinner', 'portion', 'of', 'my', 'meal', 'was', 'incredible']	21,22 FOOD#QUALITY 0 23,24	-1,-1 RESTAURANT#PRICES 0 -1,-1	
+['i', 'have', 'never', 'left', 'a', 'restaurant', 'feeling', 'as', 'if', 'i', 'was', 'abused', ' ', 'and', 'wasted', 'my', 'hard', 'earned', 'money']	5,6 RESTAURANT#GENERAL 0 11,12	5,6 RESTAURANT#PRICES 0 11,12	
+['my', 'husbands', 'birthday', 'and', 'my', 'sons', 'was', 'not', 'as', 'it', 'was', 'intended', '   ', 'and', 'we', 'drove', 'two', 'hours', 'to', 'spend', 'too', 'much', 'money', 'to', 'be', 'treated', 'terribly']	-1,-1 RESTAURANT#GENERAL 0 -1,-1	-1,-1 RESTAURANT#PRICES 0 -1,-1	-1,-1 SERVICE#GENERAL 0 28,29
+['i', 'wish', 'i', 'could', 'be', 'refused']	-1,-1 RESTAURANT#GENERAL 0 -1,-1		
+['do', 'n', ' ', 't', 'go', 'with', 'a', 'larger', 'group', 'than', '4']	-1,-1 RESTAURANT#MISCELLANEOUS 0 -1,-1		
+['at', 'first', 'we', 'were', 'a', 'little', 'taken', 'aback', ' ', 'as', 'this', 'seemed', 'to', 'present', 'a', 'problem', ' ', 'although', 'the', 'restaurant', 'looked', 'fairly', 'empty', ' ', 'but', 'they', 'hastily', 'put', 'the', 'table', 'together', 'for', 'us']	-1,-1 SERVICE#GENERAL 2 -1,-1		
+['the', 'menu', 'is', 'fairly', 'simple', 'without', 'much', 'descriptions']	1,2 FOOD#STYLE_OPTIONS 1 4,5		
+['there', 'was', 'no', 'tap', 'beer', 'that', 'evening', ' ', 'which', 'was', 'a', 'disappointment']	4,5 DRINKS#STYLE_OPTIONS 0 11,12		
+['not', 'much', 'of', 'a', 'selection', 'of', 'bottle', 'beer', 'either', ' ', 'we', 'went', 'with', 'trauma']	4,8 DRINKS#STYLE_OPTIONS 0 0,2		
+['the', 'appetizers', 'we', 'ordered', 'were', 'served', 'quickly', ' ', 'an', 'order', 'of', 'fried', 'mystery', 'and', 'class', 'were', 'delicious', 'but', 'a', 'tiny', 'portion', ' ', 'maybe', '3', 'of', 'each', ' ']	11,15 FOOD#QUALITY 2 16,17	11,15 FOOD#STYLE_OPTIONS 0 19,20	-1,-1 SERVICE#GENERAL 2 6,7
+['the', 'lobster', 'knuckles', ' ', 'special', 'of', 'the', 'day', ' ', 'were', 'ok', ' ', 'but', 'pretty', 'tactless']	1,3 FOOD#STYLE_OPTIONS 0 10,11	1,3 FOOD#STYLE_OPTIONS 0 14,15	
+['i', 'believe', 'there', 'were', '2', 'shrimp', 'in', 'the', '  ', 'salt', 'entrusted', 'shrimp', '  ', 'appetite']	8,16 FOOD#STYLE_OPTIONS 0 -1,-1		
+['she', 'replied', '  ', 'well', 'it', 'would', 'be', 'more', 'convenient', 'for', 'us', 'if', 'you', 'ordered', 'now', ' ', 'since', 'you', 'are', 'a', 'larger', 'party', ' ', 'and', 'it', 'might', 'get', 'crowded', '  ']	-1,-1 SERVICE#GENERAL 0 -1,-1		
+['the', 'food', 'arrived', 'in', 'about', '15', 'minutes']	-1,-1 SERVICE#GENERAL 1 -1,-1		
+['i', 'had', 'the', 'that', 'style', 'fried', 'sea', 'bass', '   ', 'which', 'was', 'very', 'good']	3,8 FOOD#QUALITY 2 14,15		
+['everyone', 'seemed', 'generally', 'happy', 'with', 'their', 'food', ' ', 'except', 'my', 'brother', 'who', 'had', 'the', 'drilled', 'may', 'may', ' ', 'seemingly', 'drenched', 'in', 'grapfruit', 'juice']	6,7 FOOD#QUALITY 2 3,4	14,17 FOOD#QUALITY 0 -1,-1	14,17 FOOD#STYLE_OPTIONS 0 -1,-1
+['i', 'heard', 'the', 'lobster', 'roll', 'was', 'excellent']	3,5 FOOD#QUALITY 2 6,7		
+['they', 'seemed', 'to', 'continue', 'to', 'rush', 'us', 'along', ' ', 'taking', 'plates', 'without', 'asking', 'if', 'we', 'were', 'done', ' ', 'my', 'sister', 'still', 'had', 'her', 'fork', 'in', 'hand', ' ']	-1,-1 SERVICE#GENERAL 0 -1,-1		
+['all', 'in', 'all', 'the', 'food', 'was', 'good', ' ', 'a', 'little', 'on', 'the', 'expensive', 'side', ' ', 'but', 'fresh']	4,5 FOOD#QUALITY 2 6,7	4,5 FOOD#PRICES 0 12,13	4,5 FOOD#QUALITY 2 16,17
+['service', 'not', 'the', 'friendliest', 'to', 'our', '  ', 'large', 'party', '  ']	0,1 SERVICE#GENERAL 0 1,4		
+['probably', 'would', 'not', 'go', 'back', 'here']	-1,-1 RESTAURANT#GENERAL 0 -1,-1		
+['great', 'indian', 'food']	1,3 FOOD#QUALITY 2 0,1		
+['food', 'was', 'amazing', ' ', 'i', 'love', 'indian', 'food', 'and', 'eat', 'it', 'quite', 'regularly', ' ', 'but', 'i', 'can', 'say', 'this', 'is', 'one', 'of', 'the', 'best', 'i', ' ', 've', 'had']	0,1 FOOD#QUALITY 2 2,3	0,1 FOOD#QUALITY 2 5,6	0,1 FOOD#QUALITY 2 23,24
+['very', '  ', 'normal', 'indian', 'food', '   ', 'but', 'done', 'really', 'well']	4,6 FOOD#STYLE_OPTIONS 1 3,4	4,6 FOOD#QUALITY 2 12,13	
+['also', ' ', 'waters', 'try', 'to', 'push', 'more', 'food', 'on', 'you', ' ', 'like', 'suggest', 'things', 'as', 'if', 'they', 'are', 'complimentary', 'when', 'they', 'actually', 'cost', ' ']	2,3 SERVICE#GENERAL 0 -1,-1		
+['but', 'if', 'you', ' ', 're', 'prepared', 'to', 'spend', 'some', ' ', 'and', 'remember', 'to', 'ask', 'if', 'something', 'they', 'offer', 'is', 'complimentary', ' ', 'then', 'this', 'is', 'the', 'place', 'to', 'go', 'for', 'indian', 'food']	25,26 RESTAURANT#PRICES 0 -1,-1	29,31 FOOD#QUALITY 2 -1,-1	
+['one', 'of', 'the', 'best']	-1,-1 RESTAURANT#GENERAL 2 3,4		
+['bukhara', 'drill', ' ', 'the', 'saline', 'says', 'it', 'all', '    ', 'indian', 'spice', 'have', ' ']	0,2 RESTAURANT#GENERAL 2 -1,-1		
+['the', 'lunch', 'buffets', 'is', 'expensive', 'but', 'is', 'deaf', 'worth', 'it']	1,3 FOOD#PRICES 2 4,5	1,3 FOOD#PRICES 2 8,9	
+['we', 'have', 'gone', 'for', 'dinner', 'only', 'a', 'few', 'times', 'but', 'the', 'same', 'great', 'quality', 'and', 'service', 'is', 'given']	4,5 FOOD#QUALITY 2 12,13	15,16 SERVICE#GENERAL 2 12,13	
+['bukhara', 'is', 'on', 'my', 'top', '5', 'indian', 'places', 'in', 'ny']	0,1 RESTAURANT#GENERAL 2 4,5		
+['wretched', 'and', 'reaching']	-1,-1 RESTAURANT#GENERAL 0 0,1	-1,-1 RESTAURANT#GENERAL 0 2,3	
+['i', 'have', 'never', 'been', 'so', 'disgusted', 'by', 'both', 'food', 'an', 'service']	8,9 FOOD#QUALITY 0 5,6	10,11 SERVICE#GENERAL 0 5,6	
+['for', 'states', 'they', 'delivered', 'us', 'someone', 'else', ' ', 's', 'order']	-1,-1 SERVICE#GENERAL 0 -1,-1		
+['my', 'main', 'concern', 'was', 'the', 'vanity', 'of', 'the', 'food', 'that', 'was', 'being', 'sent', 'out', 'to', 'myself', 'and', 'others', ' ', 'but', 'i', 'would', 'be', 'lying', 'is', 'i', 'said', 'that', 'as', 'someone', 'who', 'has', 'worked', 'in', 'restaurant', 'since', 'the', 'age', 'of', 'fifteen', 'i', 'was', 'expecting', 'at', 'least', 'a', 'minimal', 'effort', 'on', 'the', 'part', 'of', 'the', 'restaurant', 'to', 'amend', 'the', 'situation']	8,9 FOOD#QUALITY 0 -1,-1	-1,-1 SERVICE#GENERAL 0 -1,-1	
+['none', 'was', 'made', 'so', 'i', 'hung', 'up']	-1,-1 SERVICE#GENERAL 0 -1,-1		
+['less', 'than', 'three', 'minutes', 'passed', 'before', 'i', 'found', 'myself', 'doubled', 'over', 'the', 'toilet']	-1,-1 FOOD#QUALITY 0 -1,-1		
+['my', 'girlfriend', ' ', 'being', 'slightly', 'more', 'aggressive', ' ', 'and', 'having', 'been', 'equally', 'disgusted', 'causing', 'her', 'to', 'throw', 'out', 'the', 'remainder', 'of', 'her', 'barely', 'eaten', 'meal', ' ', 'called', 'back', 'only', 'to', 'be', 'informed', 'that', 'i', 'was', 'probably', 'wrong', 'and', 'that', 'it', 'was', 'most', 'likely', 'an', 'system', ' ', 'and', 'that', 'we', 'were', 'also', 'blacklisted', 'from', 'their', 'restaurant']	24,25 FOOD#QUALITY 0 12,13	-1,-1 SERVICE#GENERAL 0 -1,-1	
+['it', 'was', 'n', ' ', 't', 'as', 'if', 'this', 'restaurant', 'had', 'any', 'major', 'bragging', 'points', 'before', 'hand', ' ', 'but', 'now', 'it', ' ', 's', 'simply', 'repulsive']	8,9 RESTAURANT#GENERAL 0 23,24		
+['i', 'book', 'a', 'gorgeous', 'white', 'organs', 'tent', 'which', 'included', 'a', 'four', 'course', 'prim', 'fix', 'menu', 'which', 'we', 'enjoyed', 'a', 'lot']	10,15 FOOD#QUALITY 2 17,18	4,7 AMBIENCE#GENERAL 2 3,4	
+['i', 'completely', 'recommend', 'case', 'la', 'femme', 'for', 'any', 'special', 'occasion', 'and', 'to', 'really', 'impress', 'your', 'date']	3,6 RESTAURANT#MISCELLANEOUS 2 2,3		
+['more', 'williamsburg', 'garage']	-1,-1 RESTAURANT#GENERAL 0 -1,-1		
+['the', 'dishes', 'came', 'out', 'around', '5', 'minutes', 'apart']	-1,-1 SERVICE#GENERAL 0 -1,-1		
+['the', 'bibimbap', 'was', 'average', ' ', 'but', 'the', 'stone', 'bowl', 'was', 'n', ' ', 't', 'even', 'close', 'to', 'dazzling']	1,2 FOOD#QUALITY 1 3,4	7,9 FOOD#QUALITY 0 10,17	
+['too', 'bad', 'i', 'had', 'paid', 'an', 'extra', ' ', '2', 'for', 'the', 'stone', 'bowl']	11,13 FOOD#PRICES 0 1,2		
+['the', 'naked', ' ', 'bosom', 'was', 'horrible']	1,4 FOOD#QUALITY 0 5,6		
+['easily', 'the', 'worst', 'stir', ' ', 'fried', 'squad', 'i', ' ', 've', 'ever', 'tasted']	3,7 FOOD#QUALITY 0 2,3		
+['the', 'sauce', 'tasted', 'more', 'like', 'chinese', 'fast', 'food', 'than', 'decent', 'organ']	1,2 FOOD#QUALITY 0 -1,-1		
+['the', 'side', 'dishes', 'were', 'possible', ' ', 'and', 'i', 'did', 'get', 'a', 'refill', 'upon', 'request']	1,3 FOOD#QUALITY 2 4,5		
+['the', 'real', 'problem', 'i', 'had', 'with', 'this', 'place', 'was', 'the', 'complete', 'lack', 'of', 'service']	13,14 SERVICE#GENERAL 0 11,13		
+['she', 'just', 'nodded', 'and', 'walked', 'off']	-1,-1 SERVICE#GENERAL 0 -1,-1		
+['as', 'to', 'my', 'comment', 'about', 'the', 'food', ' ', 'no', 'apology', 'or', 'acknowledgment', 'was', 'made']	-1,-1 SERVICE#GENERAL 0 -1,-1		
+['my', 'wife', 'had', 'barely', 'touched', 'that', 'mess', 'of', 'a', 'dish']	9,10 FOOD#QUALITY 0 6,7		
+['we', 'were', 'charged', 'full', 'price']	-1,-1 SERVICE#GENERAL 0 3,4		
+['lives', 'up', 'to', 'the', 'hope']	-1,-1 RESTAURANT#GENERAL 2 -1,-1		
+['we', ' ', 've', 'tried', 'before', 'but', 'it', 'always', 'packed', 'and', 'does', 'n', ' ', 't', 'take', 'reservations']	-1,-1 RESTAURANT#MISCELLANEOUS 1 -1,-1		
+['it', 'was', 'well', 'worth', 'the', 'wait']	-1,-1 RESTAURANT#GENERAL 2 3,4		
+['the', 'wife', 'had', 'the', 'risotto', 'which', 'was', 'amazing']	4,5 FOOD#QUALITY 2 7,8		
+['it', 'does', 'n', ' ', 't', 'look', 'appetizing', 'as', 'it', ' ', 's', 'covered', 'in', 'squad', 'ink', 'and', 'it', 'turns', 'your', 'lips', 'and', 'teeth', 'black', ' ', 'but', 'the', 'taste', 'was', 'phenomena']	-1,-1 FOOD#STYLE_OPTIONS 0 -1,-1	-1,-1 FOOD#QUALITY 2 28,29	
+['the', 'faro', 'salad', 'and', 'the', 'washed', 'upon', 'potatoes', 'were', 'also', 'extremely', 'taste']	1,3 FOOD#QUALITY 2 11,12	5,8 FOOD#QUALITY 2 11,12	
+['i', 'love', 'margherita', 'penza', '–', 'i', 'love', 'east', 'village', 'penza']	2,4 RESTAURANT#GENERAL 2 1,2	7,10 FOOD#QUALITY 2 6,7	
+['love', 'this', 'place', ' ', 'every', 'time', 'we', 'are', 'in', 'the', 'city', 'this', 'is', 'one', 'of', 'the', 'places', 'we', 'always', 'go']	2,3 RESTAURANT#GENERAL 2 0,1		
+['a', 'quintessential', 'slice', 'of', 'ny', 'penza']	2,6 FOOD#QUALITY 1 1,2		
+['personally', 'i', 'like', 'the', 'margherita', 'penza', 'better', ' ', 'but', 'they', 'are', 'all', 'good']	4,6 FOOD#QUALITY 2 2,3	4,6 FOOD#QUALITY 2 12,13	-1,-1 FOOD#QUALITY 2 12,13
+['possibly', 'the', 'most', 'romantic', 'restaurant', 'in', 'the', 'city']	4,5 AMBIENCE#GENERAL 2 3,4		
+['not', 'only', 'is', 'it', 'an', 'adventure', 'getting', 'to', 'this', 'somewhat', 'hidden', 'spot', ' ', 'once', 'you', 'enter', 'the', 'unmarred', 'wooden', 'doors', ' ', 'the', 'zen', 'and', 'intimate', 'door', 'will', 'make', 'you', 'feel', 'like', 'you', '’', 're', 'no', 'longer', 'in', 'the', 'city']	11,12 LOCATION#GENERAL 1 10,11	17,20 AMBIENCE#GENERAL 2 -1,-1	25,26 AMBIENCE#GENERAL 2 24,25
+['if', 'you', '’', 're', 'planning', 'to', 'come', 'here', ' ', 'make', 'sure', 'that', 'your', 'date', 'is', 'someone', 'whom', 'you', 'really', 'like', 'since', 'you', '’', 'll', 'be', 'ushered', 'to', 'private', 'booths', 'where', 'there', 'will', 'be', 'no', 'people', 'or', 'food', 'watching', ' ', 'choose', 'the', 'ones', 'on', 'the', 'ground', 'level', 'that', 'have', 'glass', 'ceilings', 'so', 'you', 'may', 'see', 'the', 'stars', 'in', 'the', 'sky', '  ']	27,29 AMBIENCE#GENERAL 2 25,26	48,50 AMBIENCE#GENERAL 2 -1,-1	
+['it', '’', 's', 'just', 'you', 'and', 'your', 'date', 'and', 'an', 'occasional', 'cut', '‘', 'excuse', 'me', '’', 'before', 'the', 'waiter', 'opens', 'the', 'little', 'curtain', 'to', 'your', 'booth']	-1,-1 AMBIENCE#GENERAL 2 -1,-1	18,19 SERVICE#GENERAL 2 11,12	
+['my', 'party', 'had', 'the', 'be', ' ', '29', 'five', 'prim', 'menu', ' ', 'which', 'was', 'such', 'a', 'wonderful', 'deal', 'since', 'it', 'also', 'came', 'with', 'a', 'flight', 'of', 'sake']	4,10 FOOD#PRICES 2 -1,-1	4,10 FOOD#STYLE_OPTIONS 2 15,16	
+['we', 'started', 'off', 'with', 'a', 'delightful', 'sashimi', 'amuse', 'fouche']	6,9 FOOD#QUALITY 2 5,6		
+['i', 'picked', 'the', 'drilled', 'black', 'cod', 'as', 'my', 'entree', ' ', 'which', 'i', 'absolutely', 'devoured', 'while', 'someone', 'commented', 'that', 'the', 'drilled', 'salmon', 'dish', 'was', 'better']	3,6 FOOD#QUALITY 2 13,14	19,22 FOOD#QUALITY 2 23,24	
+['the', 'entries', 'were', 'served', 'with', 'miss', 'soup', 'and', 'rice']	1,2 FOOD#STYLE_OPTIONS 1 -1,-1		
+['for', 'deserts', ' ', 'we', 'tried', 'the', 'frozen', 'black', 'sesame', 'mouse', ' ', 'interesting', 'but', 'not', 'extraordinary', ' ', 'and', 'match', ' ', 'powdered', 'green', 'tea', ' ', 'and', 'bluebeard', 'cheesecake', ' ', 'which', 'was', 'phenomena']	6,10 FOOD#QUALITY 1 11,12	6,10 FOOD#QUALITY 1 14,15	17,26 FOOD#QUALITY 2 29,30
+['i', 'do', 'n', ' ', 't', 'usually', 'visit', 'the', 'same', 'establishment', 'more', 'than', 'once', ' ', 'what', 'more', 'twice', ' ', 'but', 'i', ' ', 'll', 'come', 'to', 'zenkichi', 'daytime', 'for', 'a', 'quiet', ' ', 'hurried', 'and', 'memorable', 'dinner']	24,25 AMBIENCE#GENERAL 2 28,29	24,25 AMBIENCE#GENERAL 2 30,31	24,25 RESTAURANT#GENERAL 2 32,33
+['terrible', 'would', 'be', 'a', 'compliment']	-1,-1 RESTAURANT#GENERAL 0 0,1		
+['the', 'service', 'leaves', 'much', 'to', 'be', 'desired', ' ', 'from', 'feeling', 'like', 'you', 'are', 'rushed', 'the', 'place', 'your', 'order', ' ', 'to', 'being', 'ignored', 'the', 'rest', 'of', 'the', 'night']	1,2 SERVICE#GENERAL 0 -1,-1		
+['we', 'paid', 'a', 'fixed', 'prince', 'but', 'got', 'nothing', ' ']	-1,-1 SERVICE#GENERAL 0 -1,-1		
+['we', 'never', 'ate', 'because', 'by', 'close', 'to', '2', 'in', 'the', 'morning', 'we', 'were', 'not', 'served', 'and', 'were', 'too', 'upset', 'ad', 'tired', 'to', 'start', 'eating']	-1,-1 SERVICE#GENERAL 0 18,19	-1,-1 SERVICE#GENERAL 0 20,21	
+['stay', 'away']	-1,-1 RESTAURANT#GENERAL 0 -1,-1		
+['great', 'shall', 'shall']	1,3 FOOD#QUALITY 2 0,1		
+['i', 'love', 'it']	-1,-1 RESTAURANT#GENERAL 2 1,2		
+['but', 'for', 'the', 'shall', 'shall', ' ', 'you', 'wo', 'n', ' ', 't', 'find', 'much', 'better', 'in', 'ny']	3,5 FOOD#QUALITY 2 -1,-1		
+['dokebi', 'gives', 'williamsburg', 'the', 'right', 'one', ' ', 'two', 'punch', 'of', 'classic', 'organ', 'food', 'and', 'fusion', 'twists', 'like', 'pork', 'belly', 'faces']	11,13 FOOD#QUALITY 2 10,11	14,16 FOOD#QUALITY 2 -1,-1	17,20 FOOD#QUALITY 2 -1,-1
+['the', 'hot', 'dogs', 'are', 'good', ' ', 'yes', ' ', 'but', 'the', 'reason', 'to', 'get', 'over', 'here', 'is', 'the', 'fantastic', 'pork', 'coquette', 'sandwich', ' ', 'perfect', 'on', 'its', 'supermarket', 'squishy', 'but']	1,3 FOOD#QUALITY 2 4,5	18,21 FOOD#QUALITY 2 17,18	27,28 FOOD#QUALITY 2 22,23
+['restaurant', 'with', 'a', 'view']	3,4 LOCATION#GENERAL 1 -1,-1		
+['the', 'food', 'tasted', 'very', 'good']	1,2 FOOD#QUALITY 2 4,5		
+['the', 'main', 'entree', 'was', 'also', 'very', 'good']	1,3 FOOD#QUALITY 2 6,7		
+['price', 'is', 'high', 'but', 'the', 'food', 'is', 'good', ' ', 'so', 'i', 'would', 'come', 'back', 'again']	5,6 FOOD#QUALITY 2 7,8	5,6 FOOD#PRICES 0 2,3	-1,-1 RESTAURANT#GENERAL 2 -1,-1
+['this', 'place', 'does', 'n', ' ', 't', 'make', 'any', 'sense']	1,2 RESTAURANT#GENERAL 0 -1,-1		
+['just', 'want', 'to', 'warn', 'you', 'all', ' ', 'do', 'n', ' ', 't', 'waste', 'your', 'time', 'and', 'money']	-1,-1 RESTAURANT#GENERAL 0 -1,-1		
+['this', 'place', 'has', 'totally', 'weird', 'door', ' ', 'stairs', 'going', 'up', 'with', 'mirror', 'walls', ' ', 'i', 'am', 'surprised', 'how', 'no', 'one', 'yet', 'broke', 'their', 'head', 'or', 'fall', 'off', 'the', 'stairs', ' ', 'mirror', 'walls', 'make', 'you', 'dizzy', 'and', 'delusion', '  ']	5,6 AMBIENCE#GENERAL 0 4,5	30,32 AMBIENCE#GENERAL 0 34,35	30,32 AMBIENCE#GENERAL 0 36,37
+['this', 'place', 'is', 'not', 'inviting', 'and', 'the', 'food', 'is', 'totally', 'weird']	1,2 AMBIENCE#GENERAL 0 3,5	7,8 FOOD#QUALITY 0 10,11	
+['the', 'concept', 'of', 'japanese', 'taras', 'is', 'newly', 'created', 'and', 'clearly', 'does', 'n', ' ', 't', 'work']	3,5 FOOD#STYLE_OPTIONS 0 10,15		
+['good', 'food']	1,2 FOOD#QUALITY 2 0,1		
+['the', 'food', 'was', 'great', 'and', 'taste', ' ', 'but', 'the', 'sitting', 'space', 'was', 'too', 'small', ' ', 'i', 'do', 'n', ' ', 't', 'like', 'being', 'cramp', 'in', 'a', 'corner']	1,2 FOOD#QUALITY 2 3,4	1,2 FOOD#QUALITY 2 5,6	9,11 AMBIENCE#GENERAL 0 12,14
+['over', 'all', 'it', 'was', 'a', 'very', 'nice', 'romantic', 'place']	8,9 RESTAURANT#GENERAL 2 6,7	8,9 AMBIENCE#GENERAL 2 7,8	
+['loved', 'it']	-1,-1 RESTAURANT#GENERAL 2 0,1		
+['a', 'worker', 'and', 'i', 'tried', 'pacific', 'after', 'work', 'a', 'few', 'friday', 'and', 'loved', 'it']	5,6 RESTAURANT#GENERAL 2 12,13		
+['the', 'atmosphere', 'was', 'great']	1,2 AMBIENCE#GENERAL 2 3,4		
+['the', 'food', 'we', 'ordered', 'was', 'excellent', ' ', 'although', 'i', 'would', 'n', ' ', 't', 'say', 'the', 'margaritas', 'were', 'anything', 'to', 'write', 'home', 'about']	1,2 FOOD#QUALITY 2 5,6	15,16 DRINKS#QUALITY 1 -1,-1	
+['our', 'witness', 'was', 'n', ' ', 't', 'mean', ' ', 'but', 'not', 'especially', 'warm', 'or', 'attentive', 'either']	1,2 SERVICE#GENERAL 1 3,7	1,2 SERVICE#GENERAL 1 9,14	
+['i', 'must', 'say', 'i', 'am', 'surprised', 'by', 'the', 'bad', 'reviews', 'of', 'the', 'restaurant', 'earlier', 'in', 'the', 'year', ' ', 'though']	12,13 RESTAURANT#GENERAL 2 8,9		
+['regardless', ' ', 'we', ' ', 'll', 'be', 'back', 'and', 'ca', 'n', ' ', 't', 'wait', 'to', 'visit', 'in', 'the', 'summer', 'to', 'take', 'advantage', 'of', 'the', 'ratio']	23,24 AMBIENCE#GENERAL 2 -1,-1	-1,-1 RESTAURANT#GENERAL 2 -1,-1	
+['dumbfoundingly', 'poor']	-1,-1 RESTAURANT#GENERAL 0 1,2		
+['this', 'was', ' ', 'from', 'start', 'to', 'finish', ' ', 'a', 'mind', ' ', 'bogglingly', 'uncomfortable', 'experience']	-1,-1 RESTAURANT#GENERAL 0 12,13		
+['lexicographers', 'take', 'note', ' ', 'a', 'new', 'and', 'fascinating', 'definition', 'of', 'rudeness', 'is', 'alive', 'and', 'flourishing', 'right', 'here', 'in', 'brooklyn']	-1,-1 SERVICE#GENERAL 0 10,11		
+['the', 'serves', 'at', 'flatbush', 'farm', 'appear', 'to', 'have', 'perfectly', 'that', 'ghastly', 'technique', 'of', 'making', 'you', 'feel', 'guilty', 'and', 'ashamed', 'for', 'reigning', 'to', 'attract', 'their', 'attention']	1,2 SERVICE#GENERAL 0 8,9		
+['polite', 'acknowledgment', 'is', 'out']	-1,-1 SERVICE#GENERAL 0 -1,-1		
+['and', 'how', 'many', 'times', 'can', 'you', 'pick', 'up', 'the', 'same', 'perfectly', 'signed', 'set', 'of', 'napkins', ' ', 'inspect', 'them', 'rapidly', 'and', 'plank', 'them', 'down', 'in', 'exactly', 'the', 'same', 'place', 'instead', 'of', 'venturing', 'a', 'glance', 'at', 'people', 'who', 'are', 'there', 'to', 'help', 'you', 'make', 'the', 'rent']	-1,-1 SERVICE#GENERAL 0 -1,-1		
+['a', 'different', 'server', 'enhanced', 'the', 'fun', ' ', 'dumping', 'our', 'entries', 'in', 'front', 'of', 'us', 'halfway', 'through', 'our', 'appetite', ' ', 'which', 'was', 'delicious', ' ']	2,3 SERVICE#GENERAL 0 3,4	17,18 FOOD#QUALITY 2 21,22	
+['overall', 'the', 'food', 'quality', 'was', 'pretty', 'good', ' ', 'though', 'i', 'hear', 'the', 'salmon', 'is', 'much', 'better', 'when', 'it', 'has', 'n', ' ', 't', 'sat', 'cooling', 'in', 'front', 'of', 'the', 'guest']	2,3 FOOD#QUALITY 2 6,7	-1,-1 SERVICE#GENERAL 0 -1,-1	
+['at', ' ', '120', 'for', 'two', 'people', ' ', 'however', ' ', 'this', 'in', 'no', 'way', 'represents', 'value', ' ', 'unless', 'you', ' ', 're', 'looking', 'to', 'pay', 'by', 'the', 'hour', 'for', 'passive', ' ', 'aggressive', 'torture']	-1,-1 RESTAURANT#PRICES 0 -1,-1	-1,-1 RESTAURANT#GENERAL 0 -1,-1	-1,-1 SERVICE#GENERAL 0 27,30
+['on', 'that', 'scale', ' ', 'it', ' ', 's', 'a', 'world', ' ', 'better']	-1,-1 RESTAURANT#GENERAL 0 -1,-1		
+['how', 'is', 'this', 'place', 'still', 'open']	3,4 RESTAURANT#GENERAL 0 -1,-1		
+['i', 'honestly', 'do', 'n', ' ', 't', 'even', 'know', 'where', 'to', 'begin']	-1,-1 RESTAURANT#GENERAL 0 -1,-1		
+['we', 'arrived', 'and', 'were', 'seated', 'immediately', ' ', 'which', 'made', 'us', 'both', 'happy']	-1,-1 SERVICE#GENERAL 2 11,12		
+['everything', 'was', 'going', 'good', 'until', 'we', 'got', 'our', 'meals']	8,9 FOOD#QUALITY 0 -1,-1	-1,-1 RESTAURANT#GENERAL 2 3,4	
+['i', 'took', 'one', 'look', 'at', 'the', 'chicken', 'and', 'i', 'was', 'appalled']	6,7 FOOD#STYLE_OPTIONS 0 10,11		
+['it', 'was', 'served', 'with', 'skin', ' ', 'over', 'a', 'bed', 'of', 'extremely', 'undercooked', 'spinal', 'and', 'washed', 'potatoes']	12,13 FOOD#QUALITY 0 11,12	-1,-1 FOOD#STYLE_OPTIONS 0 -1,-1	
+['at', 'this', 'point', ' ', 'the', 'witness', 'comes', 'over', 'and', 'asks', 'us', 'if', 'everything', 'was', 'okay', ' ', 'i', 'was', 'literally', 'so', 'shocked', 'that', 'i', 'was', 'speechless', 'and', 'did', 'n', ' ', 't', 'say', 'anything', ' ', 'and', 'guess', 'what', ' ', 'the', 'witness', 'walked', 'away']	5,6 SERVICE#GENERAL 0 -1,-1		
+['so', ' ', 'i', 'switch', 'with', 'my', 'boyfriend', 'again', 'to', 'see', 'if', 'maybe', 'i', 'could', 'stomach', 'the', 'meat', 'and', 'spinal', 'again', ' ', 'but', 'the', 'spinal', 'was', 'so', 'undercooked', 'that', 'i', 'just', 'could', 'not', 'bite', 'through', 'it']	23,24 FOOD#QUALITY 0 26,27		
+['i', 'could', 'n', ' ', 't', 'even', 'enjoy', 'the', 'washed', 'potatoes', 'because', 'it', 'was', 'hidden', 'completely', 'under', 'the', 'chicken', 'and', 'spinal']	-1,-1 FOOD#STYLE_OPTIONS 0 -1,-1		
+['so', 'i', 'decide', 'to', 'report', 'back', 'to', 'the', 'witness', 'because', 'it', 'was', 'completely', 'incredible']	-1,-1 FOOD#QUALITY 0 13,14		
+['guess', 'what', ' ', 'i', 'waited', 'for', 'twenty', 'minutes', 'before', 'she', 'came', 'over', 'and', 'when', 'she', 'finally', 'did', ' ', 'she', 'says', '   ', 'oh', 'well', ' ', 'i', 'wish', 'you', 'would', 'have', 'said', 'something', 'earlier', '  ', 'no', 'apology', ' ', 'nothing']	-1,-1 SERVICE#GENERAL 0 39,40		
+['after', 'that', 'she', 'simply', 'took', 'our', 'plates', ' ', 'walked', 'away', ' ', 'came', 'back', 'another', 'twenty', 'minutes', 'later', 'with', 'the', 'bill', 'and', 'the', 'chicken', 'on', 'it', '           ']	-1,-1 SERVICE#GENERAL 0 -1,-1		
+['no', 'desert', 'menu', ' ', 'no', 'apology', ' ', 'nothing', '     ']	-1,-1 SERVICE#GENERAL 0 7,8		
+['this', 'is', 'where', 'it', 'really', 'really', 'gets', 'bad', ' ', 'the', 'manager', 'said', ' ', 'there', 'is', 'absolutely', 'nothing', 'we', 'can', 'do', ' ', 'it', ' ', 's', 'a', 'matter', 'of', 'taste', 'that', 'she', 'did', 'n', ' ', 't', 'like', 'it', ' ', 'and', 'i', 'can', 'not', 'come', 'it']	10,11 SERVICE#GENERAL 0 7,8		
+['again', ' ', 'no', 'apology', ' ', 'no', 'is', 'there', 'anything', 'else', 'i', 'can', 'get', 'you', ' ', 'no', 'can', 'i', 'get', 'you', 'a', 'drink', 'to', 'make', 'up', 'for', 'it', ' ', 'nothing', '   ']	-1,-1 SERVICE#GENERAL 0 28,29		
+['the', 'level', 'of', 'rudeness', 'was', 'preposterous']	-1,-1 SERVICE#GENERAL 0 5,6		
+['the', 'manager', 'came', 'to', 'the', 'table', 'and', 'said', 'we', 'can', 'do', 'what', 'we', 'want', ' ', 'so', 'we', 'paid', 'for', 'what', 'we', 'did', 'enjoy', ' ', 'the', 'drinks', 'and', 'appetizers', ' ', 'and', 'walked', 'out']	1,2 SERVICE#GENERAL 0 -1,-1	25,26 DRINKS#QUALITY 2 22,23	27,28 FOOD#QUALITY 2 22,23
+['i', 'have', 'never', 'ever', 'had', 'such', 'an', 'unpleasant', 'experience']	-1,-1 RESTAURANT#GENERAL 0 7,8		
+['this', 'staff', 'should', 'be', 'fired']	1,2 SERVICE#GENERAL 0 4,5		
+['crisp', 'crust', 'margherita', 'penza']	2,4 FOOD#QUALITY 2 0,1	2,4 FOOD#QUALITY 2 1,2	
+['it', 'was', 'really', 'good', 'penza']	4,5 FOOD#QUALITY 2 3,4		
+['the', 'crust', 'was', 'amazingly', 'cooked', 'well', 'and', 'penza', 'was', 'fully', 'loaded', '     ']	1,2 FOOD#QUALITY 2 4,6	7,8 FOOD#STYLE_OPTIONS 2 9,11	
+['you', 'know', 'what', 'i', 'mean', 'all', 'the', 'positive', 'things', 'happening', 'there', 'made', 'my', 'write', 'this', 'review']	-1,-1 RESTAURANT#GENERAL 2 7,8		
+['if', 'i', 'could', 'give', '0', 'stars', 'i', 'would', 'do', 'so', 'for', 'this', 'place']	12,13 RESTAURANT#GENERAL 0 -1,-1		
+['the', 'reason', 'there', 'are', '4', 'different', 'results', 'on', 'citysearch', 'for', 'the', 'same', 'place', 'is', 'because', 'they', 'keep', 'trying', 'to', 'start', 'a', 'new', 'thread', 'so', 'they', 'can', 'stock', 'it', 'with', 'positive', 'reviews']	-1,-1 RESTAURANT#MISCELLANEOUS 0 -1,-1		
+['well', '   ', 'they', 'can', 'run', 'but', 'they', 'ca', 'n', ' ', 't', 'hide']	-1,-1 RESTAURANT#GENERAL 0 -1,-1		
+['this', 'place', '   ', 'god', 'where', 'do', 'i', 'begin']	1,2 RESTAURANT#GENERAL 0 -1,-1		
+['great', 'hot', 'dogs']	1,3 FOOD#QUALITY 2 0,1		
+['the', 'hot', 'dogs', 'are', 'top', 'notch', ' ', 'and', 'they', ' ', 're', 'slamwich', 'is', 'amazing']	1,3 FOOD#QUALITY 2 4,6	11,12 FOOD#QUALITY 2 13,14	
+['going', 'to', 'bark', 'is', 'always', 'worth', 'the', 'train', 'ride', ' ', 'and', 'will', 'make', 'your', 'tongue', 'and', 'belly', 'very', 'happy']	2,3 RESTAURANT#GENERAL 2 5,6	-1,-1 FOOD#QUALITY 2 18,19	
+['only', 'complaint', 'is', 'the', 'pricking', '  ', 'i', 'believe', 'it', 'would', 'be', 'more', 'reasonable', 'to', 'pay', 'a', 'dollar', 'less', 'on', 'each', 'item', 'listed', 'on', 'the', 'menu']	25,26 FOOD#PRICES 0 -1,-1		
+['fabulous', 'food', ' ', 'if', 'the', 'front', 'of', 'house', 'staff', 'do', 'n', ' ', 't', 'put', 'you', 'off', '–']	1,2 FOOD#QUALITY 2 0,1	5,9 SERVICE#GENERAL 0 -1,-1	
+['it', ' ', 's', 'a', 'little', 'out', 'of', 'our', 'price', 'range', 'for', 'dining', 'there', 'except', 'on', 'special', 'occasions', ' ', 'but', 'we', ' ', 've', 'eaten', 'there', '6', 'times', 'in', 'the', 'last', '2', 'years']	-1,-1 RESTAURANT#PRICES 0 -1,-1		
+['each', 'time', 'we', ' ', 've', 'been', ' ', 'the', 'front', 'of', 'house', 'staff', ' ', 'not', 'the', 'waters', ' ', 'they', ' ', 're', 'fantastic', ' ', 'but', 'the', 'people', 'who', 'greet', 'and', 'seat', 'you', ' ', 'has', 'been', 'so', 'hideous', 'to', 'us', 'that', 'were', 'it', 'not', 'for', 'the', 'exceptional', 'fish', 'dishes', 'i', 'would', 'never', 'return']	15,16 SERVICE#GENERAL 2 20,21	8,12 SERVICE#GENERAL 0 34,35	44,46 FOOD#QUALITY 2 43,44
+['as', 'bc', 'does', 'n', ' ', 't', 'take', 'reservations', 'you', 'almost', 'always', 'have', 'to', 'wait', 'by', 'the', 'bar', ' ', 'and', 'be', 'abused', 'by', 'the', 'front', 'of', 'house', 'staff', 'until', 'you', 'are', 'seated', ' ', 'which', 'can', 'be', 'over', 'an', 'hour', 'later']	1,2 RESTAURANT#MISCELLANEOUS 0 -1,-1	23,27 SERVICE#GENERAL 0 20,21	-1,-1 SERVICE#GENERAL 0 20,21
+['the', 'friday', 'retro', 'girl', ' ', 'with', 'winged', ' ', 'dame', 'end', 'glasses', ' ', 'will', 'yell', 'at', 'you', 'if', 'you', 'try', 'to', 'order', 'a', 'drink']	3,4 SERVICE#GENERAL 0 1,2		
+['i', 'was', 'almost', 'amused', 'by', 'the', 'fact', 'that', 'she', 'was', 'turning', 'away', 'customers', 'at', 'pm', 'on', 'a', 'friday', 'night', 'because', 'she', '  ', 'had', 'a', 'by', 'to', 'go', 'to', '  ', 'that', 'night', ' ', 'utf', ' ']	-1,-1 SERVICE#GENERAL 0 -1,-1		
+['i', ' ', 'd', 'be', 'horrified', 'if', 'my', 'staff', 'were', 'turning', 'away', 'customers', 'so', 'early', 'and', 'so', 'rudely']	7,8 SERVICE#GENERAL 0 4,5		
+['there', ' ', 's', 'another', 'girl', 'who', 'i', 'ca', 'n', ' ', 't', 'describe', ' ', 'she', 'is', 'about', '5', ' ', '6', '  ', 'with', 'brown', 'hair', ' ', 'who', 'eavesdrops', 'on', 'your', 'conversation', 'and', 'chimes', 'in', ' ', 'except', 'she', 'only', 'hears', 'the', 'last', 'part', 'of', 'what', 'you', 'said', ' ', 'so', 'her', 'uninvited', 'opinions', 'are', 'often', 'out', 'of', 'context', 'and', 'nothing', 'to', 'do', 'with', 'what', 'you', ' ', 're', ' ', 'really', ' ', 'talking', 'about']	4,5 SERVICE#GENERAL 0 -1,-1		
+['i', ' ', 'm', 'a', 'friendly', 'person', ' ', 'so', 'i', 'would', 'n', ' ', 't', 'mind', 'had', 'she', 'not', 'been', 'so', 'nasty', 'and', 'gotten', 'so', 'personal']	-1,-1 SERVICE#GENERAL 0 19,20		
+['again', ' ', 'i', ' ', 'd', 'be', 'super', 'upset', 'if', 'that', 'were', 'my', 'employee']	-1,-1 SERVICE#GENERAL 0 7,8		
+['considering', 'you', 'will', 'spend', 'at', 'least', ' ', '60', 'a', 'head', ' ', 'i', 'expect', 'better', 'service']	14,15 SERVICE#GENERAL 0 12,14	-1,-1 RESTAURANT#PRICES 0 -1,-1	
+['so', ' ', 'if', 'you', ' ', 're', 'walking', 'by', 'and', 'thinking', 'about', 'dining', ' ', 'you', 'might', 'want', 'to', 'see', 'who', ' ', 's', 'going', 'to', 'be', 'seating', 'you', 'first', '  ']	-1,-1 SERVICE#GENERAL 0 -1,-1		
+['maitre', ' ', 'd', '   ', 'eat', 'and', 'get', 'out', ' ']	0,3 SERVICE#GENERAL 0 -1,-1		
+['while', 'finishing', 'our', 'meals', 'which', 'included', 'a', 'high', ' ', 'end', 'bottle', 'of', 'wine', ' ', 'our', 'son', ' ', 's', 'fiance', 'joined', 'us', 'for', 'a', 'glass', 'of', 'wine', 'and', 'dessert']	10,13 DRINKS#QUALITY 2 7,10		
+['this', 'guy', 'refused', 'to', 'seat', 'her', 'and', 'she', 'left', ' ', 'followed', 'shortly', 'by', 'the', 'four', 'of', 'us', ' ', 'but', 'not', 'before', 'i', 'told', 'him', 'that', 'in', 'my', '40', 'years', 'of', 'world', 'travel', ' ', 'including', 'paris', ' ', 'that', 'i', 'had', 'never', 'seen', 'such', 'a', 'display', 'of', 'bad', 'behavior', 'by', 'a', 'footman', 'in', 'a', 'restaurant']	49,50 SERVICE#GENERAL 0 45,46		
+['his', 'response', 'was', 'snug', ' ', 'arrogant', ' ', 'and', 'condescending', ' ', 'totally', 'consistent', 'with', 'his', 'deportment', 'on', 'display', 'all', 'evening']	-1,-1 SERVICE#GENERAL 0 3,4	-1,-1 SERVICE#GENERAL 0 5,6	-1,-1 SERVICE#GENERAL 0 8,9
+['if', 'you', 'go', 'here', ' ', 'do', 'it', 'on', 'his', 'off', ' ', 'night']	-1,-1 SERVICE#GENERAL 0 -1,-1		
+['best', 'meal', 'in', 'a', 'long', 'time']	1,2 FOOD#QUALITY 2 0,1		
+['muscles', 'and', 'calamari', 'were', 'superb', 'saturday', 'evening']	0,1 FOOD#QUALITY 2 4,5	2,3 FOOD#QUALITY 2 4,5	
+['my', 'father', 'had', 'the', 'flank', 'speak', 'which', 'was', 'very', 'good', ' ', 'and', 'my', 'mother', 'had', 'the', 'swordfish']	4,6 FOOD#QUALITY 2 9,10		
+['the', 'four', 'seasons', 'restaurant', 'is', 'a', 'great', 'experience']	0,4 RESTAURANT#GENERAL 2 6,7		
+['the', 'food', 'is', 'great', 'and', 'the', 'environment', 'is', 'even', 'better']	1,2 FOOD#QUALITY 2 3,4	6,7 AMBIENCE#GENERAL 2 9,10	
+['everyone', 'must', 'come', 'here', 'at', 'least', 'once']	-1,-1 RESTAURANT#GENERAL 2 -1,-1		
+['highly', 'recommend', 'it']	-1,-1 RESTAURANT#GENERAL 2 1,2		
+['taking', 'hot', 'dogs', 'to', 'the', 'next', 'level']	1,3 FOOD#QUALITY 2 -1,-1		
+['at', 'first', 'glance', 'this', 'place', 'seems', 'a', 'bit', 'prices', 'for', 'a', 'hot', 'dog', 'joint', ' ', 'but', 'at', 'bark', 'you', 'do', 'n', ' ', 't', 'just', 'get', 'your', 'average', 'hot', 'dog']	11,13 FOOD#QUALITY 2 -1,-1	17,18 RESTAURANT#PRICES 0 -1,-1	
+['here', 'the', 'hot', 'dog', 'is', 'elevated', 'to', 'the', 'level', 'of', 'a', 'real', 'entree', 'with', 'numerous', 'variations', 'available']	2,4 FOOD#QUALITY 2 5,6	2,4 FOOD#STYLE_OPTIONS 2 14,15	
+['great', 'atmosphere']	1,2 AMBIENCE#GENERAL 2 0,1		
+['i', 'highly', 'recommend', 'the', 'fish', 'faces', ' ', 'everything', 'else', 'was', 'ok']	4,6 FOOD#QUALITY 2 2,3	-1,-1 FOOD#QUALITY 1 10,11	
+['cool', 'atmosphere', ' ', 'the', 'fire', 'place', 'in', 'the', 'back', 'really', 'as', 'to', 'it', 'but', 'needs', 'a', 'bit', 'more', 'heat', 'throughout', 'on', 'a', 'cold', 'night']	1,2 AMBIENCE#GENERAL 2 0,1	4,6 AMBIENCE#GENERAL 2 -1,-1	-1,-1 AMBIENCE#GENERAL 0 -1,-1
+['poor', 'service', 'and', 'management']	1,2 SERVICE#GENERAL 0 0,1	3,4 SERVICE#GENERAL 0 0,1	
+['had', 'an', 'awful', 'experience', 'at', 'case', 'la', 'femme', 'on', 'a', 'saturday', 'dinner']	5,8 RESTAURANT#GENERAL 0 2,3		
+['appetizers', 'took', 'nearly', 'an', 'hour']	-1,-1 SERVICE#GENERAL 0 -1,-1		
+['never', 'got', 'an', 'explanation', 'as', 'to', 'what', 'was', 'going', 'on']	-1,-1 SERVICE#GENERAL 0 -1,-1		
+['the', 'manager', 'was', 'rude', 'and', 'handled', 'the', 'situation', 'extremely', 'poorly']	1,2 SERVICE#GENERAL 0 3,4	1,2 SERVICE#GENERAL 0 9,10	
+['on', 'the', 'way', 'out', ' ', 'we', 'heard', 'of', 'other', 'guests', 'complaining', 'about', 'similar', 'issues']	-1,-1 SERVICE#GENERAL 0 10,11		
+['can', '’', 't', 'believe', 'how', 'an', 'expensive', 'ny', 'restaurant', 'can', 'be', 'so', 'disrespectful', 'to', 'its', 'clients']	8,9 RESTAURANT#PRICES 0 6,7	-1,-1 SERVICE#GENERAL 0 12,13	
+['what', 'a', 'haste']	-1,-1 RESTAURANT#GENERAL 0 2,3		
+['the', 'food', 'is', 'very', 'good', ' ', 'but', 'not', 'outstanding']	1,2 FOOD#QUALITY 2 4,5	1,2 FOOD#QUALITY 1 7,9	
+['there', 'is', 'no', 'way', 'it', 'justified', 'the', 'accolades', 'it', 'receives', ' ', 'the', 'attitude', 'of', 'the', 'staff', 'or', 'the', 'wait', 'for', 'a', 'table']	15,16 SERVICE#GENERAL 0 -1,-1	18,19 SERVICE#GENERAL 0 -1,-1	-1,-1 FOOD#QUALITY 0 -1,-1
+['on', 'our', 'last', 'visit', ' ', 'they', 'skipped', 'over', 'our', 'name', 'on', 'the', 'list', ' ', 'leaving', 'us', 'waiting', 'an', 'extra', 'hour', 'for', 'a', 'table']	-1,-1 SERVICE#GENERAL 0 -1,-1		
+['mistakes', 'happen', ' ', 'but', 'they', 'are', 'usually', 'accompanied', 'by', 'an', 'apology', ' ', 'perhaps', 'even', 'a', 'glass', 'of', 'wine', '   ', 'but', 'not', 'the', 'grunt', 'that', 'we', 'received', 'from', 'the', 'al', 'di', 'la', 'staff']	33,34 SERVICE#GENERAL 0 -1,-1		
+['expensive']	-1,-1 RESTAURANT#PRICES 0 0,1		
+['the', 'past', 'was', 'well', 'cooked', ' ', 'did', 'n', ' ', 't', 'have', 'enough', 'sauce', 'though', 'or', 'flavor']	1,2 FOOD#QUALITY 0 3,5		
+['so', 'rude', '  ']	-1,-1 SERVICE#GENERAL 0 1,2		
+['i', 'was', 'one', 'of', 'the', 'people', 'that', 'went', 'for', 'this', 'horrible', 'experience']	-1,-1 RESTAURANT#GENERAL 0 10,11		
+['the', 'hostess', 'was', 'rude', 'and', 'i', 'got', 'a', 'distinct', 'feeling', 'that', 'they', 'did', 'not', 'want', 'to', 'serve', 'us']	1,2 SERVICE#GENERAL 0 3,4	-1,-1 SERVICE#GENERAL 0 -1,-1	
+['the', 'only', 'thing', 'that', 'my', 'friend', 'left', 'out', 'is', 'that', 'when', 'we', 'sat', 'down', 'at', 'the', 'bar', 'the', 'bartender', 'disappeared']	18,19 SERVICE#GENERAL 0 19,20		
+['i', 'asked', 'for', 'a', 'menu', 'and', 'the', 'same', 'witness', 'looked', 'at', 'my', 'like', 'i', 'was', 'insane']	8,9 SERVICE#GENERAL 0 -1,-1		
+['i', 'was', 'shocked', 'that', 'my', 'friends', 'wanted', 'to', 'stay', 'after', 'the', 'witness', 'said', '   ', 'can', 'i', 'help', 'you', '  ', 'and', '  ', 'how', 'many', 'are', 'in', 'your', 'party', '  ']	11,12 SERVICE#GENERAL 0 -1,-1		
+['the', 'three', 'of', 'us', 'standing', 'in', 'front', 'of', 'her', 'should', 'have', 'been', 'an', 'indication', 'of', 'how', 'many', 'of', 'us', 'there', 'were']	-1,-1 SERVICE#GENERAL 0 -1,-1		
+['we', 'did', 'n', ' ', 't', 'look', 'like', 'the', 'other', 'patrons', 'in', 'there', 'so', 'unfortunately', 'i', 'think', 'that', 'may', 'have', 'been', 'part', 'of', 'the', 'problem']	-1,-1 RESTAURANT#MISCELLANEOUS 0 -1,-1		
+['bad', 'staff']	1,2 SERVICE#GENERAL 0 0,1		
+['i', 'generally', 'like', 'this', 'place']	4,5 RESTAURANT#GENERAL 2 2,3		
+['the', 'design', 'of', 'the', 'space', 'is', 'good']	4,5 AMBIENCE#GENERAL 2 6,7		
+['but', 'the', 'service', 'is', 'horrid']	2,3 SERVICE#GENERAL 0 4,5		
+['i', 'was', 'there', 'for', 'branch', 'recently', ' ', 'and', 'we', 'were', 'tag', 'termed', 'by', 'a', 'witness', 'and', 'a', 'waiter']	14,15 SERVICE#GENERAL 0 11,12	17,18 SERVICE#GENERAL 0 11,12	
+['the', 'waiter', 'delivered', 'our', 'food', 'while', 'holding', 'what', 'appeared', 'to', 'be', 'a', 'plastic', 'bag', 'of', 'garage', 'in', 'one', 'hand']	1,2 SERVICE#GENERAL 0 -1,-1		
+['i', 'ca', 'n', ' ', 't', 'believe', 'that', 'it', 'was', ' ', 'but', 'please', 'put', 'the', 'bag', 'down', 'before', 'delivering', 'food']	-1,-1 SERVICE#GENERAL 0 -1,-1		
+['the', 'witness', 'came', 'to', 'check', 'in', 'on', 'us', 'every', 'few', 'minutes', ' ', 'and', 'began', 'to', 'clear', 'the', 'plates', 'while', 'half', 'of', 'us', 'were', 'still', 'eating', ' ', 'a', 'big', 'pet', 'nerve', 'of', 'mine', 'that', 'happens', 'almost', 'everywhere', ' ', 'so', 'i', 'try', 'to', 'ignore', 'it', ' ']	1,2 SERVICE#GENERAL 0 -1,-1		
+['i', 'could', 'n', ' ', 't', 'ignore', 'the', 'fact', 'that', 'she', 'reach', 'over', 'the', 'plate', 'of', 'one', 'of', 'my', 'friends', ' ', 'who', 'was', 'in', 'mid', 'bite', ' ', 'to', 'clear', 'the', 'table']	-1,-1 SERVICE#GENERAL 0 -1,-1		
+['she', 'then', 'put', 'the', 'check', 'down', 'without', 'asking', 'if', 'we', 'were', 'done', ' ', 'and', 'came', 'to', 'check', 'on', 'the', 'bill', 'every', 'two', 'minutes', ' ', 'even', 'though', 'we', 'were', 'one', 'of', 'three', 'occupied', 'tables']	-1,-1 SERVICE#GENERAL 0 -1,-1		
+['i', 'wish', 'i', 'could', 'like', 'this', 'place', 'more', ' ', 'and', 'i', 'wish', 'someone', 'would', 'restrain', 'the', 'staff']	6,7 RESTAURANT#GENERAL 0 -1,-1	16,17 SERVICE#GENERAL 0 -1,-1	
