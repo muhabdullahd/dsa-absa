@@ -93,6 +93,13 @@ cd scripts
 python plot_training_stats.py
 ```
 
+### Training all models and Creating Images/Chart
+```bash
+python evaluation/compare_models.py
+```
+
+> **Note:** This command **must be executed from the project root** to ensure proper access to datasets and internal modules.
+
 ## Results
 The transformer-based ABSA model achieves superior performance compared to baseline models:
 
