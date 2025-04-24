@@ -1,3 +1,5 @@
+# scripts/plot_training_stats.py
+
 import json
 import os
 import matplotlib.pyplot as plt

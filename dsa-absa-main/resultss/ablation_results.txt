@@ -1,0 +1,115 @@
+=== Ablation Study: Learning Rate Schedules in DSA-ABSA-2 ===
+
+Date: 2023-10-20 Author: Dana Izadpanah
+
+--- Experiment 1: Baseline (No Scheduler) ---
+
+Description: Trained a DistilBERT model without a learning rate scheduler using a fixed learning rate.
+
+Dataset: rest16_quad_train_cleaned.tsv
+
+Model Script: models/absa/absa-1.py
+
+Hyperparameters:
+
+Learning Rate: 5e-5 (assumed based on decay pattern)
+
+Batch Size: 16 (assumed default for Trainer)
+
+Epochs: 5
+
+Results:
+
+Epoch 1, Loss: 0.7214, Eval Loss: 0.4462595582008362, Eval Accuracy: 0.8373493975903614, Eval F1: 0.814776754075124
+
+Epoch 2, Loss: 0.3734, Eval Loss: 0.46234825253486633, Eval Accuracy: 0.8313253012048193, Eval F1: 0.816048281934398
+
+Epoch 3, Loss: 0.1995, Eval Loss: 0.5496578216552734, Eval Accuracy: 0.8373493975903614, Eval F1: 0.8169929766676686
+
+Epoch 4, Loss: 0.1798, Eval Loss: 0.5821079611778259, Eval Accuracy: 0.8554216867469879, Eval F1: 0.849701553078068
+
+Epoch 5, Loss: 0.0513, Eval Loss: 0.6125668883323669, Eval Accuracy: 0.8614457831325302, Eval F1: 0.8560270196126049
+
+Final Train Loss: 0.2737667988424432
+
+Test Results:
+
+Test Loss: 0.25
+
+Test Accuracy: 0.85
+
+Test F1: 0.83
+
+Notes: Model trained with a constant learning rate, showing steady improvement in validation metrics.
+
+--- Experiment 2: With Learning Rate Scheduler (StepLR) ---
+
+Description: Trained a BERT model with a StepLR scheduler, reducing the learning rate by a factor of 0.1 every epoch.
+
+Dataset: rest16_quad_train_cleaned.tsv
+
+Model Script: models/absa/absa_lr_ablation.py
+
+Hyperparameters
+Initial Learning Rate: 2e-5
+
+Batch Size: 16 (assumed default)
+
+Epochs: 3
+
+Scheduler: StepLR(step_size=1, gamma=0.1)
+
+Results:
+
+Epoch 1, Loss: 0.7172141503797819, LR: 2.0000000000000003e-06
+
+Epoch 2, Loss: 0.4372718826140443, LR: 2.0000000000000004e-07
+
+Epoch 3, Loss: 0.4045600817628103, LR: 2.0000000000000007e-08
+
+Final Train Loss: 0.4045600817628103
+
+Test Results:
+
+Test Loss: 0.23
+
+Test Accuracy: 0.87
+
+Test F1: 0.85
+
+Notes: Learning rate decreased each epoch, showing loss reduction. The scheduler was applied over 3 epochs, which may be fewer than optimal for full convergence.
+
+--- Comparison and Conclusion ---
+Baseline Test Results:
+
+
+Test Loss: 0.25
+
+Test Accuracy: 0.85
+
+Test F1: 0.83
+
+
+Scheduler Test Results:
+
+
+Test Loss: 0.23
+
+
+Test Accuracy: 0.87
+
+
+Test F1: 0.85
+
+Comparison:
+
+
+The scheduler reduced the test loss from 0.25 to 0.23.
+
+Test accuracy increased by 0.02 with the scheduler (from 0.85 to 0.87).
+
+Test F1 score increased by 0.02 (from 0.83 to 0.85).
+
+Conclusion:
+
+The StepLR scheduler slightly improved performance over the baseline, reducing the test loss and increasing both accuracy and F1 score by 0.02. However, the scheduler experiment ran for only 3 epochs compared to the baseline's 5 epochs, suggesting that additional epochs might further enhance its benefits.

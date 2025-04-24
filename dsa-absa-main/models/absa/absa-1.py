@@ -1,3 +1,4 @@
+# dsa-absa-main/models/absa/absa-1.py
 import pandas as pd
 import numpy as np
 from datasets import Dataset
@@ -58,7 +59,7 @@ training_args = TrainingArguments(
     num_train_epochs=5,
     per_device_train_batch_size=16,
     per_device_eval_batch_size=64,
-    evaluation_strategy="epoch",
+    eval_strategy="epoch",
     save_strategy="no",
     logging_dir="./logs",
     logging_steps=50,
