@@ -8,24 +8,28 @@ from utils.metrics_utils import ModelComparison
 from models.baseline.train_baseline import train_baseline
 from models.svm.train_svm_baseline import train_svm_baseline
 from models.absa.absa_1 import train_absa
+from models.random.train_random_baseline import train_random_baseline
 
 def compare_models():
     # Train all models and collect their metrics
-    print("Training Baseline Model...")
+    print("Training Random Baseline Model...")
+    random_metrics = train_random_baseline()
+    
+    print("\nTraining Naive Bayes Baseline Model...")
     baseline_metrics = train_baseline()
     
     print("\nTraining SVM Model...")
     svm_metrics = train_svm_baseline()
     
-    print("Training ABSA Model...")
+    print("\nTraining ABSA Model...")
     absa_metrics = train_absa()
     if absa_metrics is None:
         raise RuntimeError("ABSA model training failed to return metrics.")
 
-    
     # Create comparison
     comparison = ModelComparison({
-        'baseline': baseline_metrics,
+        'random': random_metrics,
+        'naive_bayes': baseline_metrics,
         'svm': svm_metrics,
         'absa': absa_metrics
     })
