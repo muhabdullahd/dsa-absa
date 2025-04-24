@@ -13,6 +13,10 @@ sys.path.append('../..')  # Add parent directory to path
 from utils.MetricCallback import MetricsCallback
 from utils.data_utils_absa import preprocess_for_absa
 
+# Verify transformers version
+import transformers
+print(f"Transformers version: {transformers.__version__}")
+
 # === 1. Load and Preprocess Data ===
 train_df = pd.read_csv("../../Dataset/rest16_quad_train_cleaned.tsv", delimiter="\t")
 dev_df   = pd.read_csv("../../Dataset/rest16_quad_dev_cleaned.tsv", delimiter="\t")
@@ -58,7 +62,7 @@ training_args = TrainingArguments(
     num_train_epochs=5,
     per_device_train_batch_size=16,
     per_device_eval_batch_size=64,
-    evaluation_strategy="epoch",
+    eval_strategy="epoch",
     save_strategy="no",
     logging_dir="./logs",
     logging_steps=50,
@@ -81,9 +85,3 @@ trainer.train()
 trainer.save_model("./saved_model")
 results = trainer.evaluate(test_dataset)
 print("Test Results:", results)
-
-
-
-
-
-
