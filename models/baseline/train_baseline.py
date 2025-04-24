@@ -1,29 +1,61 @@
 import pandas as pd
 from sklearn.naive_bayes import MultinomialNB
-from sklearn.metrics import accuracy_score, f1_score, classification_report
 import sys
+import time
 sys.path.append('../..')  # Add parent directory to path
 from utils.data_utils_baseline import load_data
+from utils.metrics_utils import ModelMetrics
 
-# Load preprocessed data
-train_data, test_data = load_data()
+def train_baseline():
+    # Initialize metrics
+    metrics = ModelMetrics("baseline")
+    
+    # Load preprocessed data
+    train_data, test_data = load_data()
 
-# Separate features and labels
-X_train, y_train = train_data['text'], train_data['label']
-X_test, y_test = test_data['text'], test_data['label']
+    # Separate features and labels
+    X_train, y_train = train_data['text'], train_data['label']
+    X_test, y_test = test_data['text'], test_data['label']
 
-# Train a Naive Bayes classifier
-model = MultinomialNB()
-model.fit(X_train, y_train)
+    # Train a Naive Bayes classifier
+    print("Training Naive Bayes classifier...")
+    model = MultinomialNB()
+    
+    # Time the training
+    start_time = time.time()
+    model.fit(X_train, y_train)
+    training_time = time.time() - start_time
+    
+    # Make predictions and time them
+    start_time = time.time()
+    y_pred = model.predict(X_test)
+    y_prob = model.predict_proba(X_test)
+    prediction_time = time.time() - start_time
 
-# Make predictions
-y_pred = model.predict(X_test)
+    # Compute and save metrics
+    metrics.compute_metrics(
+        y_true=y_test,
+        y_pred=y_pred,
+        y_prob=y_prob,
+        training_time=training_time,
+        prediction_time=prediction_time
+    )
+    
+    # Generate plots
+    metrics.plot_confusion_matrix()
+    metrics.plot_learning_curves()
+    metrics.plot_roc_curves(y_test, y_prob)
+    
+    # Save metrics to CSV
+    metrics.save_metrics_to_csv()
+    
+    print("\nBaseline Model Results:")
+    print(f"Training Time: {training_time:.2f} seconds")
+    print(f"Prediction Time: {prediction_time:.2f} seconds")
+    print("\nMetrics Summary:")
+    print(metrics.get_metrics_summary())
+    
+    return metrics
 
-# Evaluate the model
-accuracy = accuracy_score(y_test, y_pred)
-f1 = f1_score(y_test, y_pred, average="macro")
-print(f'Accuracy: {accuracy:.4f}')
-print(f'F1 Score: {f1:.4f}')
-
-# Print classification report
-print(classification_report(y_test, y_pred))
+if __name__ == "__main__":
+    train_baseline()

@@ -1,11 +1,15 @@
 import pandas as pd
 from sklearn.svm import SVC
-from sklearn.metrics import accuracy_score, f1_score, classification_report
 import sys
+import time
 sys.path.append('../..')  # Add parent directory to path
 from utils.data_utils_baseline import load_data
+from utils.metrics_utils import ModelMetrics
 
 def train_svm_baseline():
+    # Initialize metrics
+    metrics = ModelMetrics("svm")
+    
     # Load preprocessed data
     train_data, test_data = load_data()
 
@@ -15,20 +19,43 @@ def train_svm_baseline():
 
     # Train an SVM classifier with RBF kernel
     print("Training SVM classifier...")
-    model = SVC(kernel='rbf', C=1.0, random_state=42)
+    model = SVC(kernel='rbf', C=1.0, random_state=42, probability=True)
+    
+    # Time the training
+    start_time = time.time()
     model.fit(X_train, y_train)
-
-    # Make predictions
+    training_time = time.time() - start_time
+    
+    # Make predictions and time them
+    start_time = time.time()
     y_pred = model.predict(X_test)
+    y_prob = model.predict_proba(X_test)
+    prediction_time = time.time() - start_time
 
-    # Evaluate the model
-    accuracy = accuracy_score(y_test, y_pred)
-    f1 = f1_score(y_test, y_pred, average="macro")
-    print("\nSVM Baseline Results:")
-    print(f'Accuracy: {accuracy:.4f}')
-    print(f'F1 Score: {f1:.4f}')
-    print("\nClassification Report:")
-    print(classification_report(y_test, y_pred))
+    # Compute and save metrics
+    metrics.compute_metrics(
+        y_true=y_test,
+        y_pred=y_pred,
+        y_prob=y_prob,
+        training_time=training_time,
+        prediction_time=prediction_time
+    )
+    
+    # Generate plots
+    metrics.plot_confusion_matrix()
+    metrics.plot_learning_curves()
+    metrics.plot_roc_curves(y_test, y_prob)
+    
+    # Save metrics to CSV
+    metrics.save_metrics_to_csv()
+    
+    print("\nSVM Model Results:")
+    print(f"Training Time: {training_time:.2f} seconds")
+    print(f"Prediction Time: {prediction_time:.2f} seconds")
+    print("\nMetrics Summary:")
+    print(metrics.get_metrics_summary())
+    
+    return metrics
 
 if __name__ == "__main__":
     train_svm_baseline()
