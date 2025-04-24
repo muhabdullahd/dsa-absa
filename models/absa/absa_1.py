@@ -12,6 +12,7 @@ from utils.data_utils_absa import preprocess_for_absa
 from utils.metrics_utils import ModelMetrics
 
 def train_absa():
+    # Initialize metrics with the final name we want
     metrics = ModelMetrics("absa-1")
 
     # Load data
@@ -42,19 +43,19 @@ def train_absa():
     num_labels = len(train_df["labels"].unique())
     model = DistilBertForSequenceClassification.from_pretrained("distilbert-base-uncased", num_labels=num_labels)
 
-    # Define compute_metrics for Trainer (used only during eval on dev)
+    # Define compute_metrics for Trainer to track metrics during training
     def compute_metrics(eval_pred):
         logits, labels = eval_pred
         preds = np.argmax(logits, axis=-1)
         probs = softmax(logits, axis=-1)
-        return metrics.compute_metrics(y_true=labels, y_pred=preds, y_prob=probs)
+        return metrics.compute_metrics(y_true=labels, y_pred=preds, y_prob=probs, is_test=False)
 
     training_args = TrainingArguments(
         output_dir="./results",
         num_train_epochs=5,
         per_device_train_batch_size=16,
         per_device_eval_batch_size=64,
-        evaluation_strategy="epoch",
+        evaluation_strategy="epoch",  # Evaluate after each epoch
         save_strategy="no",
         logging_dir="./logs",
         logging_steps=50,
@@ -69,12 +70,12 @@ def train_absa():
         compute_metrics=compute_metrics,
     )
 
-    # Train
+    # Train and track time
     start_time = time.time()
     trainer.train()
     training_time = time.time() - start_time
 
-    # Evaluate on test set (manual prediction)
+    # Evaluate on test set and track time
     start_time = time.time()
     predictions = trainer.predict(test_dataset)
     prediction_time = time.time() - start_time
@@ -84,31 +85,29 @@ def train_absa():
     preds = np.argmax(logits, axis=-1)
     probs = softmax(logits, axis=-1)
 
-    # Create a new metrics object for final evaluation
-    final_metrics = ModelMetrics("absa-1-final")
-    
-    # Compute final metrics with timing
-    final_metrics.compute_metrics(
+    # Add final test metrics with timing information
+    metrics.compute_metrics(
         y_true=labels,
         y_pred=preds,
         y_prob=probs,
         training_time=training_time,
-        prediction_time=prediction_time
+        prediction_time=prediction_time,
+        is_test=True
     )
 
     # Generate plots and save
-    final_metrics.plot_confusion_matrix()
-    final_metrics.plot_learning_curves()
-    final_metrics.plot_roc_curves(labels, probs)
-    final_metrics.save_metrics_to_csv()
+    metrics.plot_confusion_matrix()
+    metrics.plot_learning_curves()
+    metrics.plot_roc_curves(labels, probs)
+    metrics.save_metrics_to_csv()
 
     print("\nABSA Model Results:")
     print(f"Training Time: {training_time:.2f} seconds")
     print(f"Prediction Time: {prediction_time:.2f} seconds")
     print("\nMetrics Summary:")
-    print(final_metrics.get_metrics_summary())
+    print(metrics.get_metrics_summary())
 
-    return final_metrics
+    return metrics
 
 if __name__ == "__main__":
     train_absa()

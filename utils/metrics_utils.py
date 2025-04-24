@@ -21,7 +21,7 @@ class ModelMetrics:
         Initialize metrics tracker for a model.
         
         Args:
-            model_name (str): Name of the model (e.g., 'baseline', 'svm', 'absa-1', 'absa-all-3')
+            model_name (str): Name of the model (e.g., 'baseline', 'svm', 'absa-1')
             save_dir (str): Directory to save metrics and plots
         """
         self.model_name = model_name
@@ -35,9 +35,12 @@ class ModelMetrics:
             'f1_macro': [],
             'f1_weighted': [],
             'confusion_matrix': None,
-            'training_time': [],
-            'prediction_time': []
         }
+        
+        # Separate test metrics
+        self.test_metrics = None
+        self.training_time = None
+        self.prediction_time = None
         
         # Create base results directory
         os.makedirs(save_dir, exist_ok=True)
@@ -61,7 +64,8 @@ class ModelMetrics:
                        y_pred: np.ndarray, 
                        y_prob: Optional[np.ndarray] = None,
                        training_time: Optional[float] = None,
-                       prediction_time: Optional[float] = None) -> Dict[str, float]:
+                       prediction_time: Optional[float] = None,
+                       is_test: bool = False) -> Dict[str, float]:
         """
         Compute all metrics for the model.
         
@@ -71,6 +75,7 @@ class ModelMetrics:
             y_prob (np.ndarray, optional): Predicted probabilities
             training_time (float, optional): Training time in seconds
             prediction_time (float, optional): Prediction time in seconds
+            is_test (bool): Whether these are test set metrics
             
         Returns:
             Dict[str, float]: Dictionary of computed metrics
@@ -83,54 +88,69 @@ class ModelMetrics:
             'recall_weighted': recall_score(y_true, y_pred, average='weighted'),
             'f1_macro': f1_score(y_true, y_pred, average='macro'),
             'f1_weighted': f1_score(y_true, y_pred, average='weighted'),
-            'confusion_matrix': confusion_matrix(y_true, y_pred)
         }
         
-        # Update history
-        for metric, value in metrics.items():
-            if metric != 'confusion_matrix':
+        # Store confusion matrix separately
+        conf_matrix = confusion_matrix(y_true, y_pred)
+        
+        if is_test:
+            # Store test metrics separately
+            self.test_metrics = metrics.copy()
+            self.test_metrics['confusion_matrix'] = conf_matrix
+            if training_time is not None:
+                self.training_time = training_time
+            if prediction_time is not None:
+                self.prediction_time = prediction_time
+        else:
+            # Update training history
+            for metric, value in metrics.items():
                 self.metrics_history[metric].append(value)
-            else:
-                self.metrics_history[metric] = value
-                
-        # Add timing metrics if provided
-        if training_time is not None:
-            self.metrics_history['training_time'].append(training_time)
-        if prediction_time is not None:
-            self.metrics_history['prediction_time'].append(prediction_time)
-            
+            self.metrics_history['confusion_matrix'] = conf_matrix
+                    
         # Save metrics to CSV in the compute_metrics directory
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        metrics_df = pd.DataFrame({
-            k: v for k, v in self.metrics_history.items() 
-            if isinstance(v, list) and v
-        })
-        metrics_df.to_csv(os.path.join(self.method_dirs['compute_metrics'], f'metrics_{timestamp}.csv'), index=False)
+        if not is_test:  # Only save training metrics to CSV
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            # Create DataFrame without confusion matrix
+            metrics_df = pd.DataFrame({k: v for k, v in self.metrics_history.items() 
+                                    if k != 'confusion_matrix'})
+            metrics_df.to_csv(os.path.join(self.method_dirs['compute_metrics'], 
+                                         f'metrics_{timestamp}.csv'), index=False)
             
         return metrics
     
     def get_metrics_summary(self) -> Dict[str, float]:
         """Get the latest metrics values."""
-        return {k: v[-1] if isinstance(v, list) and v else v 
-                for k, v in self.metrics_history.items()}
+        if self.test_metrics is not None:
+            summary = self.test_metrics.copy()
+            if self.training_time is not None:
+                summary['training_time'] = self.training_time
+            if self.prediction_time is not None:
+                summary['prediction_time'] = self.prediction_time
+            return summary
+        else:
+            return {k: v[-1] if isinstance(v, list) and v else v 
+                    for k, v in self.metrics_history.items()
+                    if k != 'confusion_matrix'}
     
     def plot_confusion_matrix(self, save_path: Optional[str] = None):
         """Plot confusion matrix."""
-        if self.metrics_history['confusion_matrix'] is None:
+        if self.test_metrics is not None and 'confusion_matrix' in self.test_metrics:
+            cm = self.test_metrics['confusion_matrix']
+        elif self.metrics_history['confusion_matrix'] is not None:
+            cm = self.metrics_history['confusion_matrix']
+        else:
             return
             
         plt.figure(figsize=(10, 8))
-        sns.heatmap(self.metrics_history['confusion_matrix'], 
-                    annot=True, 
-                    fmt='d',
-                    cmap='Blues')
+        sns.heatmap(cm, annot=True, fmt='d', cmap='Blues')
         plt.title(f'Confusion Matrix - {self.model_name}')
         plt.ylabel('True Label')
         plt.xlabel('Predicted Label')
         
         if save_path is None:
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            save_path = os.path.join(self.method_dirs['confusion_matrix'], f'confusion_matrix_{timestamp}.png')
+            save_path = os.path.join(self.method_dirs['confusion_matrix'], 
+                                   f'confusion_matrix_{timestamp}.png')
             
         plt.savefig(save_path)
         plt.close()
@@ -155,7 +175,8 @@ class ModelMetrics:
         plt.tight_layout()
         if save_path is None:
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            save_path = os.path.join(self.method_dirs['learning_curves'], f'learning_curves_{timestamp}.png')
+            save_path = os.path.join(self.method_dirs['learning_curves'], 
+                                   f'learning_curves_{timestamp}.png')
             
         plt.savefig(save_path)
         plt.close()
@@ -190,12 +211,12 @@ class ModelMetrics:
         """Save metrics history to CSV file."""
         if save_path is None:
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            save_path = os.path.join(self.method_dirs['compute_metrics'], f'metrics_{timestamp}.csv')
+            save_path = os.path.join(self.method_dirs['compute_metrics'], 
+                                   f'metrics_{timestamp}.csv')
             
-        metrics_df = pd.DataFrame({
-            k: v for k, v in self.metrics_history.items() 
-            if isinstance(v, list) and v
-        })
+        # Create DataFrame without confusion matrix
+        metrics_df = pd.DataFrame({k: v for k, v in self.metrics_history.items() 
+                                 if k != 'confusion_matrix'})
         metrics_df.to_csv(save_path, index=False)
         return save_path
 
