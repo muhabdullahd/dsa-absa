@@ -1,3 +1,5 @@
+# models/baseline/train_baseline.py
+
 import pandas as pd
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import accuracy_score, f1_score, classification_report
